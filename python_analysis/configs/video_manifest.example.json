@@ -1,0 +1,4 @@
+[
+  {"id":"phone_small", "video":"data/videos/reference_phone.mp4", "frame_step":1, "measurement_mode":"pixel", "cell_mask":false,
+   "detection":{"detector_profile":"dark-ball", "max_detection_dimension_px":1400, "min_ball_diameter_px":140, "max_ball_diameter_px":250, "min_ball_edge_support":0.35, "roi":[0.25,0.30,0.75,0.65]}}
+]

@@ -1,0 +1,14 @@
+{
+  "source_sha256": "0bded66ac5402cfa7e3a9581bdbfbdbe440ea6d14bfe7abe0fd49974fe846eed",
+  "decoded_frames": 250,
+  "camera": "Samsung S20 FE main camera, user statement",
+  "roi_oriented_px": [
+    1450,
+    200,
+    1550,
+    3500
+  ],
+  "tick_pitch_assumption_mm": 1,
+  "pitch_median_px": 52.0,
+  "limitations": "Approximate image spacing only; tick identities not manually labeled throughout. Ruler plane/zoom/focus correspondence to bearing clips unknown. Not applied to other videos."
+}

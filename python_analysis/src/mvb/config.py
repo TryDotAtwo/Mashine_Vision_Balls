@@ -11,7 +11,14 @@ CONFIG_TEMPLATE = """# Машинное зрение шариков: шабло�
 #    должен задаваться отдельно через cell_inner_diameter_mm.
 
 video_path = data/videos/Ball_For_MV.mp4
-measurement_mode = fov
+measurement_mode = pixel
+detector_profile = hough
+detection_max_dimension = 1400
+min_ball_diameter_px = 12
+max_ball_diameter_px = 500
+dark_contrast_min = 8
+dark_angular_contrast_min = 0.85
+annotated_video = false
 output_dir = output/analysis/ball_for_mv
 frame_step = 10
 max_frames = 0

@@ -1,0 +1,21 @@
+# Анализ серии
+
+- sampled_frames: 216
+- frames_with_detections: 214
+- decoded_frames: 216
+- reported_frames: 216
+- decode_status: complete
+- detection_ratio: 0.9907407407407407
+- measurements: 214
+- tracks: 1
+- eligible_tracks: 1
+- min_track_observations: 2
+- units: mm
+- calibration_status: provisional
+- track_diameter_median_px: 227.34723704970662
+- track_diameter_std_px: None
+- track_diameter_median_mm: 3.9713176401989747
+- track_diameter_std_mm: None
+- limitations: Track IDs can split/swap at occlusion or crossing; model uncertainty is not validated accuracy.
+- storage: clickhouse
+- run_id: 37827145-0260-41b1-a4b8-0df5c1e751d1

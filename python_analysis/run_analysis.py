@@ -48,7 +48,15 @@ def build_parser(defaults: dict[str, object]) -> argparse.ArgumentParser:
 
     parser.add_argument("--video", dest="video_path", type=str, help="Путь к видео")
     parser.add_argument("--output-dir", type=str, default="", help="Папка вывода артефактов")
-    parser.add_argument("--measurement-mode", choices=("fov", "reference"), default="fov", help="Режим масштаба")
+    parser.add_argument("--measurement-mode", choices=("pixel", "fov", "reference"), default="pixel", help="Режим масштаба")
+    parser.add_argument("--detection-max-dimension", type=int, default=1400)
+    parser.add_argument("--detector-profile", choices=("hough","dark-ball"), default="hough")
+    parser.add_argument("--min-ball-diameter-px", type=float, default=12.0)
+    parser.add_argument("--max-ball-diameter-px", type=float, default=500.0)
+    parser.add_argument("--dark-contrast-min", type=float, default=8.0)
+    parser.add_argument("--dark-angular-contrast-min", type=float, default=0.85)
+    parser.add_argument("--roi", type=float, nargs=4, metavar=("LEFT","TOP","RIGHT","BOTTOM"), help="Normalized center-search ROI, 0..1")
+    parser.add_argument("--annotated-video", action="store_true", help="Export annotated sampled MP4, max dimension 800px")
     parser.add_argument("--frame-step", type=int, default=10, help="Брать каждый N-й кадр")
     parser.add_argument("--max-frames", type=int, default=0, help="Ограничить число обработанных сэмплов")
     parser.add_argument("--preview-frames", type=int, default=6, help="Сколько аннотированных кадров сохранить")
@@ -122,7 +130,8 @@ def build_parser(defaults: dict[str, object]) -> argparse.ArgumentParser:
     parser.add_argument("--calibration", type=str, help="JSON сохранённого масштаба для неизменной оптической геометрии")
     parser.add_argument("--calibrate-csv", type=str, help="CSV наблюдений одного эталона для создания калибровки")
     parser.add_argument("--calibration-diameter-mm", type=float, help="Известный диаметр эталона")
-    parser.add_argument("--calibration-sigma-mm", type=float, default=0.0, help="Неопределённость диаметра эталона")
+    parser.add_argument("--calibration-sigma-mm", type=float, default=None, help="Неопределённость диаметра эталона")
+    parser.add_argument("--provisional-calibration", action="store_true", help="Unconfirmed reference size: metric values are provisional, total sigma stays unknown")
     parser.add_argument("--calibration-output", type=str, default="calibration.json")
     parser.add_argument("--calibration-width-px", type=int, help="Ширина изображения эталонной серии, если нет run.json")
     parser.add_argument("--tracking-distance-px", type=float, default=60.0, help="Макс. перемещение между обработанными кадрами")
@@ -176,7 +185,7 @@ def main(argv: list[str] | None = None) -> None:
             parser.error("--calibration-diameter-mm is required with --calibrate-csv")
         try:
             print(calibration_from_csv(args.calibrate_csv, args.calibration_diameter_mm,
-                                       args.calibration_sigma_mm, args.calibration_output, args.calibration_width_px))
+                                       args.calibration_sigma_mm, args.calibration_output, args.calibration_width_px, args.provisional_calibration))
         except ValueError as exc:
             parser.error(str(exc))
         return
@@ -237,7 +246,18 @@ def main(argv: list[str] | None = None) -> None:
         live_plots=bool(args.live_plots),
         live_plot_max_points=max(50, int(args.live_plot_max_points)),
     )
+    if args.roi and not (0 <= args.roi[0] < args.roi[2] <= 1 and 0 <= args.roi[1] < args.roi[3] <= 1):
+        parser.error("ROI requires 0 <= left < right <= 1, 0 <= top < bottom <= 1")
+    if args.single_ball and args.measurement_mode == "pixel":
+        parser.error("Pixel mode requires multi-object analysis")
     detection_cfg = DetectionConfig(
+        max_detection_dimension_px=args.detection_max_dimension,
+        detector_profile=args.detector_profile,
+        min_ball_diameter_px=args.min_ball_diameter_px,
+        max_ball_diameter_px=args.max_ball_diameter_px,
+        dark_contrast_min=args.dark_contrast_min,
+        dark_angular_contrast_min=args.dark_angular_contrast_min,
+        roi=tuple(args.roi) if args.roi else None,
         min_ball_diameter_mm=args.min_ball_diam_mm,
         max_ball_diameter_mm=args.max_ball_diam_mm,
         sigma_ball_px=args.sigma_ball_px,
@@ -284,6 +304,7 @@ def main(argv: list[str] | None = None) -> None:
             expected_ball_diameter_mm=args.expected_ball_diameter_mm,
             cell_mask=not args.no_cell_mask,
             storage=storage,
+            annotated_video=args.annotated_video,
             )
         except ValueError as exc:
             parser.error(str(exc))

@@ -13,11 +13,10 @@
 сопоставляет их между кадрами и сохраняет сводку по траекториям. Старый режим
 одного объекта и интерактивного просмотра доступен через `--single-ball`.
 
-Короткий проверочный запуск на архивном видео (геометрические параметры
-из существующего примера; это не метрологически проверенная серия):
+Короткий проверочный запуск на архивном видео без подтверждённого масштаба:
 
 ```powershell
-py -3 run_analysis.py --video data/videos/Ball_For_MV.mp4 --frame-step 10 --max-frames 4 --min-ball-diam-mm 3 --max-ball-diam-mm 10 --tracking-distance-px 200 --output-dir output/analysis/check_series
+py -3 run_analysis.py --video data/videos/Ball_For_MV.mp4 --frame-step 10 --max-frames 4 --measurement-mode pixel --min-ball-diameter-px 50 --max-ball-diameter-px 300 --tracking-distance-px 200 --output-dir output/analysis/check_series
 ```
 
 Для реальных измерений задайте фактическую геометрию либо известный диаметр
@@ -30,7 +29,7 @@ py -3 run_analysis.py --video data/videos/Ball_For_MV.mp4 --frame-step 10 --max-
 
 ```powershell
 py -3 run_analysis.py --calibrate-csv output/reference/measurements.csv --calibration-diameter-mm 4 --calibration-sigma-mm 0.01 --calibration-width-px 2100 --calibration-output configs/scale.json
-py -3 run_analysis.py --video data/videos/Ball_For_MV.mp4 --calibration configs/scale.json --output-dir output/analysis/calibrated_series
+py -3 run_analysis.py --video data/videos/Ball_For_MV.mp4 --calibration configs/scale.json --measurement-mode reference --output-dir output/analysis/calibrated_series
 ```
 
 Если рядом с CSV есть `run.json` или прежняя сводка с `width_px`, ширина
@@ -223,3 +222,11 @@ py -3 -m unittest discover -s tests -v
 `py -3 run_analysis.py --simulate-check --simulation-output output/simulation_repeat --simulation-seed 900 --simulation-frames 24`
 
 Создаёт десять размеченных сценариев, отдельно измеряет виртуальный эталон и проверяет детекцию, диаметр и ID. Выходная папка должна быть новой. Источники, допущения и границы: [методика](docs/SIMULATION_METHOD_RU.md). Независимые результаты: `output/simulation_holdout_900_20260930/validation.md` и `output/simulation_holdout_901_20260930/validation.md`. 16 модульных тестов проходят. Трекер использует глобальное сопоставление и прогноз скорости; многoобъектный анализ сохраняет субпиксельный радиус. Деформации и изменение глубины выявляют ограничения модели.
+
+## Видео телефона
+
+По умолчанию используется `pixel`: диаметр в пикселях, неизвестные mm/масштаб/неопределённость сохраняются NULL. Для тёмного шарика есть `--detector-profile dark-ball`, пиксельный диапазон, нормализованный ROI, `--dark-contrast-min` и `--dark-angular-contrast-min` (доля углов с нужным контрастом, по умолчанию 0.85). Полностью обрезанная окружность исключается. Профиль требует подготовленной сцены и не идентифицирует материал объекта.
+
+`--annotated-video` сохраняет MP4 для просмотра; временные метки CSV являются источником времени. Сводка содержит `decode_status`: complete, limited_by_request или incomplete. Для предварительного размера при неизвестной неопределённости эталона используйте `--provisional-calibration`; этот статус сохраняется в протоколе, полная sigma остаётся NULL. Подтверждённая калибровка требует явно заданной `--calibration-sigma-mm`.
+
+Подробные параметры и границы проверки: [PHONE_VIDEO_VALIDATION_RU.md](docs/PHONE_VIDEO_VALIDATION_RU.md). Повторение нескольких конфигураций: `scripts/run_video_manifest.py --manifest configs/video_manifest.example.json --output-root output/replay`. Сначала укажите свои исходные видео и калибровки в копии манифеста. Пароль ClickHouse берётся из среды.

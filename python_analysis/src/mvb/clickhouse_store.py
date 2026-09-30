@@ -61,12 +61,15 @@ class ClickHouseStore:
                 kind = "LowCardinality(String)"
             elif field.name in ("frame_index", "ball_valid_candidates", "ball_id"):
                 kind = "UInt64"
-            elif field.name in ("reference_radius_px", "reference_diameter_px"):
+            elif field.name in ("reference_radius_px", "reference_diameter_px", "scale_mm_per_px", "diameter_mm", "sigma_model_mm"):
                 kind = "Nullable(Float64)"
             else:
                 kind = "Float64"
             cols.append(field.name + " " + kind)
         self.request(f"CREATE TABLE IF NOT EXISTS {db}.python_measurements_v1 (run_id UUID, " + ", ".join(cols) + ") ENGINE=MergeTree ORDER BY (run_id, ball_id, frame_index)")
+        # Backward-compatible migration; archival run IDs and rows are preserved.
+        for name in ("scale_mm_per_px", "diameter_mm", "sigma_model_mm"):
+            self.request(f"ALTER TABLE {db}.python_measurements_v1 MODIFY COLUMN {name} Nullable(Float64)")
         self.request(f"CREATE TABLE IF NOT EXISTS {db}.python_frames_v1 (run_id UUID, frame_index UInt64, time_s Float64, objects UInt64, scale_available Bool) ENGINE=MergeTree ORDER BY (run_id, frame_index)")
         self.request(f"CREATE TABLE IF NOT EXISTS {db}.python_runs_v1 (run_id UUID, created_at DateTime64(3,'UTC') DEFAULT now64(3), video_sha256 String, provenance_json String, summary_json String) ENGINE=MergeTree ORDER BY (run_id)")
 
@@ -99,9 +102,11 @@ class ClickHouseStore:
         columns = ", ".join(f.name for f in fields(FrameMeasurement))
         measurements = [FrameMeasurement(**r) for r in self.select(f"SELECT {columns} FROM {self.database}.python_measurements_v1 WHERE run_id={{id:UUID}} ORDER BY frame_index, ball_id", params)]
         frames = self.select(f"SELECT frame_index,time_s,objects,scale_available FROM {self.database}.python_frames_v1 WHERE run_id={{id:UUID}} ORDER BY frame_index", params)
-        tracks = self.select(f"SELECT ball_id, count() AS observations, min(time_s) AS time_start_s, max(time_s) AS time_end_s, (quantileExactLow(0.5)(diameter_mm)+quantileExactHigh(0.5)(diameter_mm))/2 AS diameter_mm_median, avg(diameter_mm) AS diameter_mm_mean, if(count()>1,stddevSamp(diameter_mm),NULL) AS diameter_mm_std, avg(sigma_model_mm) AS sigma_model_mm_mean FROM {self.database}.python_measurements_v1 WHERE run_id={{id:UUID}} GROUP BY ball_id ORDER BY ball_id", params)
+        tracks = self.select(f"SELECT ball_id, count() AS observations, min(time_s) AS time_start_s, max(time_s) AS time_end_s, (quantileExactLow(0.5)(diameter_mm)+quantileExactHigh(0.5)(diameter_mm))/2 AS diameter_mm_median, avg(diameter_mm) AS diameter_mm_mean, if(count()>1,stddevSamp(diameter_mm),NULL) AS diameter_mm_std, avg(sigma_model_mm) AS sigma_model_mm_mean, (quantileExactLow(0.5)(ball_diameter_px)+quantileExactHigh(0.5)(ball_diameter_px))/2 AS diameter_px_median, avg(ball_diameter_px) AS diameter_px_mean, if(count()>1,stddevSamp(ball_diameter_px),NULL) AS diameter_px_std FROM {self.database}.python_measurements_v1 WHERE run_id={{id:UUID}} GROUP BY ball_id ORDER BY ball_id", params)
         eligible = [r for r in tracks if int(r["observations"]) >= summary["min_track_observations"]]
         aggregate = self.select(f"SELECT count() AS n, if(count()>0,(quantileExactLow(0.5)(d)+quantileExactHigh(0.5)(d))/2,NULL) AS median, if(count()>1,stddevSamp(d),NULL) AS std FROM (SELECT (quantileExactLow(0.5)(diameter_mm)+quantileExactHigh(0.5)(diameter_mm))/2 AS d FROM {self.database}.python_measurements_v1 WHERE run_id={{id:UUID}} GROUP BY ball_id HAVING count()>={{minimum:UInt64}})", {"id": run_id, "minimum": summary["min_track_observations"]})[0]
+        pixel_aggregate = self.select(f"SELECT count() AS n, if(count()>0,(quantileExactLow(0.5)(d)+quantileExactHigh(0.5)(d))/2,NULL) AS median, if(count()>1,stddevSamp(d),NULL) AS std FROM (SELECT (quantileExactLow(0.5)(ball_diameter_px)+quantileExactHigh(0.5)(ball_diameter_px))/2 AS d FROM {self.database}.python_measurements_v1 WHERE run_id={{id:UUID}} GROUP BY ball_id HAVING count()>={{minimum:UInt64}})", {"id": run_id, "minimum": summary["min_track_observations"]})[0]
+        summary.update(track_diameter_median_px=pixel_aggregate["median"], track_diameter_std_px=pixel_aggregate["std"])
         frame_stats = self.select(f"SELECT count() AS sampled, countIf(objects>0) AS detected FROM {self.database}.python_frames_v1 WHERE run_id={{id:UUID}}", params)[0]
         sampled, detected = int(frame_stats["sampled"]), int(frame_stats["detected"])
         summary.update(sampled_frames=sampled, frames_with_detections=detected, detection_ratio=detected / sampled if sampled else 0)

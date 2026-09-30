@@ -44,6 +44,7 @@ def refine_circle_from_edges(
     band_px: int,
     min_edge_points: int = 24,
     round_result: bool = True,
+    canny_thresholds: tuple[int, int] | None = None,
 ) -> tuple[float, float, float] | tuple[int, int, int]:
     """
     Refine an approximate integer circle by fitting to Canny edge pixels in an annulus.
@@ -52,8 +53,12 @@ def refine_circle_from_edges(
     """
     cx_i, cy_i, r_i = circle
     h, w = gray.shape[:2]
-    edges = _canny_edges(gray)
-    yy, xx = np.ogrid[:h, :w]
+    margin = int(math.ceil(r_i + band_px + 3))
+    left, top = max(0,int(cx_i)-margin), max(0,int(cy_i)-margin)
+    right, bottom = min(w,int(cx_i)+margin+1), min(h,int(cy_i)+margin+1)
+    crop = gray[top:bottom,left:right]
+    edges = cv2.Canny(crop,*canny_thresholds) if canny_thresholds else _canny_edges(crop)
+    yy, xx = np.ogrid[top:bottom, left:right]
     dist = np.sqrt((xx.astype(np.float64) - float(cx_i)) ** 2 + (yy.astype(np.float64) - float(cy_i)) ** 2)
     inner = max(1.0, float(r_i) - float(band_px))
     outer = float(r_i) + float(band_px)
@@ -62,7 +67,7 @@ def refine_circle_from_edges(
     pts_y, pts_x = np.where(ring)
     if pts_y.size < min_edge_points:
         return circle
-    pts_xy = np.column_stack([pts_x.astype(np.float64), pts_y.astype(np.float64)])
+    pts_xy = np.column_stack([pts_x.astype(np.float64)+left, pts_y.astype(np.float64)+top])
     try:
         cx, cy, r = fit_circle_kasa(pts_xy)
     except ValueError:

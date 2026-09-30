@@ -40,6 +40,13 @@ class VideoAnalysisConfig:
 
 @dataclass(frozen=True)
 class DetectionConfig:
+    max_detection_dimension_px: int = 1400
+    detector_profile: str = "hough"
+    min_ball_diameter_px: float = 12.0
+    max_ball_diameter_px: float = 500.0
+    dark_contrast_min: float = 8.0
+    dark_angular_contrast_min: float = 0.85
+    roi: tuple[float, float, float, float] | None = None
     min_ball_diameter_mm: float = 1.0
     max_ball_diameter_mm: float = 10.0
     sigma_ball_px: float = 1.5
@@ -71,9 +78,9 @@ class FrameMeasurement:
     ball_diameter_px: float
     reference_radius_px: float | None
     reference_diameter_px: float | None
-    scale_mm_per_px: float
-    diameter_mm: float
-    sigma_model_mm: float
+    scale_mm_per_px: float | None
+    diameter_mm: float | None
+    sigma_model_mm: float | None
     method: str
     ball_edge_support: float = 0.0
     ball_valid_candidates: int = 0
@@ -127,10 +134,10 @@ def preprocess_gray(frame: np.ndarray) -> np.ndarray:
     return cv2.GaussianBlur(equalized, (5, 5), 0)
 
 
-def _prepare_detection_frame(frame: np.ndarray) -> tuple[np.ndarray, float]:
+def _prepare_detection_frame(frame: np.ndarray, max_dimension_px: int = DETECTION_MAX_DIMENSION_PX) -> tuple[np.ndarray, float]:
     height, width = frame.shape[:2]
     longest_edge = max(height, width)
-    scale = min(1.0, DETECTION_MAX_DIMENSION_PX / float(longest_edge))
+    scale = min(1.0, max_dimension_px / float(longest_edge))
     if scale < 1.0:
         working_frame = cv2.resize(
             frame,

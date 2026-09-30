@@ -1,0 +1,23 @@
+{
+  "role": "post-development checkpoints, not independent holdout",
+  "results": [
+    {
+      "frame": 450,
+      "total": 1,
+      "matched": 1,
+      "unmatched": 0
+    },
+    {
+      "frame": 600,
+      "total": 1,
+      "matched": 1,
+      "unmatched": 0
+    },
+    {
+      "frame": 750,
+      "total": 1,
+      "matched": 1,
+      "unmatched": 0
+    }
+  ]
+}

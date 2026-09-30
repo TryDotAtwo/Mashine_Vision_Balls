@@ -1,0 +1,21 @@
+{
+  "schema": "mvb.scalar_calibration.v1",
+  "width_px": 2160,
+  "scale_mm_per_px": 0.019191832401513835,
+  "sigma_scale_mm_per_px": null,
+  "reference_diameter_mm": 3.98,
+  "reference_sigma_mm": null,
+  "observations": 105,
+  "mean_diameter_px": 207.37988518939238,
+  "std_diameter_px": 11.505792164400125,
+  "source_csv": "reference_first_half.csv",
+  "source_sha256": "474928f8a6262baa7e84dd9365cec0f616e7f3f530e602228b18b6da188abadf",
+  "status": "provisional",
+  "repeatability_scale_mm_per_px": 0.0010647958198267593,
+  "limitations": "Scalar scale for unchanged optical geometry; no distortion/refraction correction.",
+  "reference_source": "User statement 2026-09-30: electronic caliper, diameter approximately 3.98 mm; not found in supplied exports",
+  "geometry_id": "E3V2",
+  "assumption": "Same bearing size in all six clips; metric values conditional on this assumption",
+  "focus_zoom_distance_source": "Фокус 0, 80 мм до чехла, х1.mp4",
+  "source_pixel_run_id": "34cf11c4-5b66-479e-a524-e10a4f69edcc"
+}
