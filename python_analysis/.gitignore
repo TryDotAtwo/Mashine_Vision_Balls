@@ -3,3 +3,8 @@ __pycache__/
 *.pyc
 .env
 *password*
+*.aux
+*.out
+*.toc
+*.log
+*.xdv
