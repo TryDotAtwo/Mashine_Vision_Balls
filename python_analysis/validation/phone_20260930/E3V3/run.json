@@ -1,0 +1,111 @@
+{
+  "schema": "mvb.series.v1",
+  "video": "Фокус 0, 80 мм до чехла, х10.mp4",
+  "fps": 60.00959281411016,
+  "width_px": 2160,
+  "height_px": 3840,
+  "decoded_frames": 367,
+  "reported_frames": 367,
+  "timestamp_source": "decoder CAP_PROP_POS_MSEC; annotated video uses mean FPS",
+  "video_config": {
+    "video_path": "Фокус 0, 80 мм до чехла, х10.mp4",
+    "output_dir": "E3V3",
+    "frame_step": 1,
+    "max_frames": 0,
+    "preview_frames": 6,
+    "interactive_preview": false,
+    "display_scale": 0.45,
+    "live_plots": false,
+    "live_plot_max_points": 3000
+  },
+  "detection_config": {
+    "max_detection_dimension_px": 700,
+    "detector_profile": "dark-ball",
+    "min_ball_diameter_px": 1200,
+    "max_ball_diameter_px": 2200,
+    "dark_contrast_min": 8.0,
+    "dark_angular_contrast_min": 0.85,
+    "roi": [
+      0.25,
+      0.3,
+      0.75,
+      0.65
+    ],
+    "min_ball_diameter_mm": 1.0,
+    "max_ball_diameter_mm": 10.0,
+    "sigma_ball_px": 1.5,
+    "sigma_reference_px": 1.5,
+    "reference_min_radius_frac": 0.25,
+    "reference_max_radius_frac": 0.6,
+    "refine_with_edge_fit": true,
+    "edge_refine_band_px": 4,
+    "adaptive_hough": true,
+    "hough_param2_reference": [
+      22,
+      26,
+      28,
+      32,
+      36
+    ],
+    "hough_param2_ball": [
+      12,
+      16,
+      18,
+      22,
+      26
+    ],
+    "min_ball_edge_support": 0.35,
+    "ball_candidate_dedupe_px": 14.0,
+    "second_ball_score_ratio": 0.92,
+    "clear_track_after_lost_frames": 0
+  },
+  "measurement_mode": "calibrated",
+  "fov_inputs": null,
+  "fov_uncertainty": null,
+  "reference": null,
+  "calibration": {
+    "schema": "mvb.scalar_calibration.v1",
+    "width_px": 2160,
+    "scale_mm_per_px": 0.0019951639960078,
+    "sigma_scale_mm_per_px": null,
+    "reference_diameter_mm": 3.98,
+    "reference_sigma_mm": null,
+    "observations": 183,
+    "mean_diameter_px": 1994.8234871738537,
+    "std_diameter_px": 8.2551965093203,
+    "source_csv": "reference_first_half.csv",
+    "source_sha256": "b1c1f27459655b1c5b38bf654ad5fb03749057890bdd08ff950aef1a637417c6",
+    "status": "provisional",
+    "repeatability_scale_mm_per_px": 8.25660564018098e-06,
+    "limitations": "Scalar scale for unchanged optical geometry; no distortion/refraction correction.",
+    "reference_source": "User statement 2026-09-30: electronic caliper, diameter approximately 3.98 mm; not found in supplied exports",
+    "geometry_id": "E3V3",
+    "assumption": "Same bearing size in all six clips; metric values conditional on this assumption",
+    "focus_zoom_distance_source": "Фокус 0, 80 мм до чехла, х10.mp4",
+    "source_pixel_run_id": "aa7390b4-ab58-46d7-a1d2-6953eb7e699c"
+  },
+  "tracking_distance_px": 500,
+  "tracking_max_missed": 10,
+  "min_track_observations": 2,
+  "cell_mask": false,
+  "versions": {
+    "python": "3.11.5",
+    "opencv": "4.12.0",
+    "numpy": "2.2.6"
+  },
+  "video_sha256": "572c6fa1a774a84bd5462ae506790df13d897b234c14add21fcdfc1d0cb0343c",
+  "source_sha256": {
+    "series_analysis.py": "0497e4f3bba5e3370d207a6b5a5ad00544a8ffe92fd0a9ae84a082c393361555",
+    "pipeline.py": "b7481235df4c212133074bf0f3d55fd9b6d54117d8466598d201ecf979bdf3f9",
+    "cv_geometry.py": "e4ddc9f4eef7d2b824aa0e7ba4ee3aa3b66f428debdae673c51eb31e070bf4ba",
+    "experiment_math.py": "94652a7cbbd70db17fed12ee42c2597dd8ac189eb5f9b341ace2e95be9e55f78",
+    "reporting.py": "6e61aa59cd87d0806803a9eda0532fc7278e5ce0fd08e84ded0232cde35009e3",
+    "clickhouse_store.py": "ff17cb09f5ca96dd01c40cf489fc67dd322eefd79b53f7e39b12e426f70ca34c"
+  },
+  "storage": "clickhouse",
+  "run_id": "944ba81c-0cb7-4cb4-8d28-037d6cfc741d",
+  "publication_metadata": {
+    "paths_redacted": true,
+    "original_run_json_sha256": "8c50524ab8f6b9f1eb41e0b992c493cffab3eeb1130013aff092af751637e178"
+  }
+}

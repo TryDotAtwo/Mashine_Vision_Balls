@@ -1,0 +1,101 @@
+{
+  "tp": 15,
+  "fp": 0,
+  "fn": 2,
+  "checked_visible_frames": 17,
+  "ambiguous_excluded": [
+    209,
+    245,
+    281,
+    821
+  ],
+  "matching_center_distance": "less than approximately marked radius",
+  "scope": "Manual approximate marking on 360px source-only tiles before inspecting new detections. Development check on known video, not independent test. Radius is approximate, not diameter ground truth.",
+  "frames": [
+    {
+      "frame": 101,
+      "accepted": 1,
+      "matched": true
+    },
+    {
+      "frame": 137,
+      "accepted": 1,
+      "matched": true
+    },
+    {
+      "frame": 173,
+      "accepted": 1,
+      "matched": true
+    },
+    {
+      "frame": 317,
+      "accepted": 0,
+      "matched": false
+    },
+    {
+      "frame": 353,
+      "accepted": 1,
+      "matched": true
+    },
+    {
+      "frame": 389,
+      "accepted": 1,
+      "matched": true
+    },
+    {
+      "frame": 425,
+      "accepted": 0,
+      "matched": false
+    },
+    {
+      "frame": 461,
+      "accepted": 1,
+      "matched": true
+    },
+    {
+      "frame": 497,
+      "accepted": 1,
+      "matched": true
+    },
+    {
+      "frame": 533,
+      "accepted": 1,
+      "matched": true
+    },
+    {
+      "frame": 569,
+      "accepted": 1,
+      "matched": true
+    },
+    {
+      "frame": 605,
+      "accepted": 1,
+      "matched": true
+    },
+    {
+      "frame": 641,
+      "accepted": 1,
+      "matched": true
+    },
+    {
+      "frame": 677,
+      "accepted": 1,
+      "matched": true
+    },
+    {
+      "frame": 713,
+      "accepted": 1,
+      "matched": true
+    },
+    {
+      "frame": 749,
+      "accepted": 1,
+      "matched": true
+    },
+    {
+      "frame": 785,
+      "accepted": 1,
+      "matched": true
+    }
+  ]
+}

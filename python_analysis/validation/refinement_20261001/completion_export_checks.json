@@ -1,0 +1,50 @@
+[
+  {
+    "name": "ordinary_hough",
+    "file": "measurements.csv",
+    "byte_identical": true,
+    "run_id": "0cdb12c3-9897-42cc-9248-1be013e800b8"
+  },
+  {
+    "name": "ordinary_hough",
+    "file": "tracks.csv",
+    "byte_identical": true,
+    "run_id": "0cdb12c3-9897-42cc-9248-1be013e800b8"
+  },
+  {
+    "name": "ordinary_hough",
+    "file": "frames.csv",
+    "byte_identical": true,
+    "run_id": "0cdb12c3-9897-42cc-9248-1be013e800b8"
+  },
+  {
+    "name": "ordinary_hough",
+    "file": "quality.json",
+    "byte_identical": true,
+    "run_id": "0cdb12c3-9897-42cc-9248-1be013e800b8"
+  },
+  {
+    "name": "legacy_hough",
+    "file": "measurements.csv",
+    "byte_identical": true,
+    "run_id": "74297e51-b1f3-4be6-8b16-5239358c7795"
+  },
+  {
+    "name": "legacy_hough",
+    "file": "tracks.csv",
+    "byte_identical": true,
+    "run_id": "74297e51-b1f3-4be6-8b16-5239358c7795"
+  },
+  {
+    "name": "legacy_hough",
+    "file": "frames.csv",
+    "byte_identical": true,
+    "run_id": "74297e51-b1f3-4be6-8b16-5239358c7795"
+  },
+  {
+    "name": "legacy_hough",
+    "file": "quality.json",
+    "byte_identical": true,
+    "run_id": "74297e51-b1f3-4be6-8b16-5239358c7795"
+  }
+]

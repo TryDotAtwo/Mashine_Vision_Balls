@@ -1,0 +1,85 @@
+[
+  {
+    "id": "E3V0",
+    "frames": 216,
+    "baseline_measurements": 214,
+    "accepted": 178,
+    "tracks": 1,
+    "median_px": 225.6476123316006,
+    "conditional_median_mm": 3.9899506854843665,
+    "quality_counts": {
+      "accepted": 178,
+      "noncircular_residual": 36
+    },
+    "run_id": "04eb53d8-626a-41eb-8a02-6e17333c8ba4"
+  },
+  {
+    "id": "E3V1",
+    "frames": 156,
+    "baseline_measurements": 150,
+    "accepted": 153,
+    "tracks": 1,
+    "median_px": 1933.5431184740476,
+    "conditional_median_mm": 3.9781541898313146,
+    "quality_counts": {
+      "accepted": 153,
+      "clipped_contour": 1
+    },
+    "run_id": "225762fb-b062-4ed4-a9d5-1dac4916ae46"
+  },
+  {
+    "id": "E3V2",
+    "frames": 236,
+    "baseline_measurements": 210,
+    "accepted": 209,
+    "tracks": 1,
+    "median_px": 200.9446834307987,
+    "conditional_median_mm": 3.9803556054149007,
+    "quality_counts": {
+      "accepted": 209,
+      "noncircular_residual": 1
+    },
+    "run_id": "2c1b5f3d-20b1-4c19-987e-c225caca1b85"
+  },
+  {
+    "id": "E3V3",
+    "frames": 367,
+    "baseline_measurements": 367,
+    "accepted": 367,
+    "tracks": 1,
+    "median_px": 1996.7401569595615,
+    "conditional_median_mm": 3.9816486784877965,
+    "quality_counts": {
+      "accepted": 367
+    },
+    "run_id": "edfe5f99-0b94-4cca-82d6-38b271734323"
+  },
+  {
+    "id": "E3V4",
+    "frames": 210,
+    "baseline_measurements": 210,
+    "accepted": 133,
+    "tracks": 1,
+    "median_px": 156.77155850197715,
+    "conditional_median_mm": 3.9700226189093644,
+    "quality_counts": {
+      "noncircular_residual": 50,
+      "accepted": 133,
+      "unstable_circle_fit": 27
+    },
+    "run_id": "b1414d0f-ec05-4102-ae75-00ffbf147e7a"
+  },
+  {
+    "id": "E3V5",
+    "frames": 210,
+    "baseline_measurements": 210,
+    "accepted": 210,
+    "tracks": 1,
+    "median_px": 1562.3690030316334,
+    "conditional_median_mm": 3.9822008601596126,
+    "quality_counts": {
+      "accepted": 210
+    },
+    "run_id": "6e007526-d299-4f00-b10d-5b8cab45402b"
+  }
+]

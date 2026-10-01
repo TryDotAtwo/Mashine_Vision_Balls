@@ -1,0 +1,80 @@
+{
+  "drive_id": "1smjAUDDvKRxU_G21Oj8YGbMP0436D_pK",
+  "title": "ПоведениеШарикаОбычное.mp4",
+  "url": "https://drive.google.com/file/d/1smjAUDDvKRxU_G21Oj8YGbMP0436D_pK/view",
+  "drive_created_time": "2024-04-03T13:04:26.691Z",
+  "bytes": 41230125,
+  "sha256": "82910bf589e7d68e6535d1baca438420107db9cffbaef3e00d7a4ee2d0e4ffc7",
+  "width": 1080,
+  "height": 1080,
+  "frames": 855,
+  "fps": 30,
+  "duration_s": 28.5,
+  "camera_model": "unknown",
+  "calibration": "not_confirmed",
+  "usage": "pixel_detection_diagnostic_only",
+  "manually_selected_frames": [
+    450,
+    600,
+    750
+  ],
+  "manual_centers_px": [
+    [
+      338,
+      626
+    ],
+    [
+      481,
+      324
+    ],
+    [
+      242,
+      514
+    ]
+  ],
+  "manual_radii_px": [
+    49,
+    49,
+    51
+  ],
+  "matching_center_tolerance_px": 20,
+  "radius_ratio_gate": [
+    0.7,
+    1.3
+  ],
+  "selected_frame_checks": [
+    {
+      "frame": 450,
+      "candidates": 24,
+      "matched_target": true,
+      "unmatched_candidates": 23
+    },
+    {
+      "frame": 600,
+      "candidates": 4,
+      "matched_target": true,
+      "unmatched_candidates": 3
+    },
+    {
+      "frame": 750,
+      "candidates": 6,
+      "matched_target": true,
+      "unmatched_candidates": 5
+    }
+  ],
+  "diagnostic_summary": {
+    "sampled_frames": 57,
+    "frames_with_detections": 57,
+    "detection_ratio": 1.0,
+    "measurements": 1499,
+    "tracks": 229,
+    "eligible_tracks": 172,
+    "min_track_observations": 2,
+    "track_diameter_median_mm": 5.231226436580036,
+    "track_diameter_std_mm": 2.7304496703497048,
+    "limitations": "Track IDs can split/swap at occlusion or crossing; model uncertainty is not validated accuracy.",
+    "storage": "clickhouse",
+    "run_id": "27d551ef-7098-4e80-980d-de8592def4ed"
+  },
+  "warning": "FOV defaults are unvalidated: millimetre exports are not physical measurements; non-target circles include bubbles/glare."
+}

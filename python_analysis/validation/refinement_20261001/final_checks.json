@@ -1,0 +1,110 @@
+[
+  {
+    "id": "E3V0",
+    "run_id": "04eb53d8-626a-41eb-8a02-6e17333c8ba4",
+    "checks": {
+      "measurements.csv": true,
+      "frames.csv": true,
+      "tracks.csv": true,
+      "quality.json": true,
+      "source_hashes": true,
+      "annotated_decoded_frames": 216,
+      "annotated_expected_frames": 216,
+      "annotated_size": [
+        450,
+        800
+      ],
+      "annotated_complete": true
+    }
+  },
+  {
+    "id": "E3V1",
+    "run_id": "225762fb-b062-4ed4-a9d5-1dac4916ae46",
+    "checks": {
+      "measurements.csv": true,
+      "frames.csv": true,
+      "tracks.csv": true,
+      "quality.json": true,
+      "source_hashes": true,
+      "annotated_decoded_frames": 156,
+      "annotated_expected_frames": 156,
+      "annotated_size": [
+        450,
+        800
+      ],
+      "annotated_complete": true
+    }
+  },
+  {
+    "id": "E3V2",
+    "run_id": "2c1b5f3d-20b1-4c19-987e-c225caca1b85",
+    "checks": {
+      "measurements.csv": true,
+      "frames.csv": true,
+      "tracks.csv": true,
+      "quality.json": true,
+      "source_hashes": true,
+      "annotated_decoded_frames": 236,
+      "annotated_expected_frames": 236,
+      "annotated_size": [
+        450,
+        800
+      ],
+      "annotated_complete": true
+    }
+  },
+  {
+    "id": "E3V3",
+    "run_id": "edfe5f99-0b94-4cca-82d6-38b271734323",
+    "checks": {
+      "measurements.csv": true,
+      "frames.csv": true,
+      "tracks.csv": true,
+      "quality.json": true,
+      "source_hashes": true,
+      "annotated_decoded_frames": 367,
+      "annotated_expected_frames": 367,
+      "annotated_size": [
+        450,
+        800
+      ],
+      "annotated_complete": true
+    }
+  },
+  {
+    "id": "E3V4",
+    "run_id": "b1414d0f-ec05-4102-ae75-00ffbf147e7a",
+    "checks": {
+      "measurements.csv": true,
+      "frames.csv": true,
+      "tracks.csv": true,
+      "quality.json": true,
+      "source_hashes": true,
+      "annotated_decoded_frames": 210,
+      "annotated_expected_frames": 210,
+      "annotated_size": [
+        450,
+        800
+      ],
+      "annotated_complete": true
+    }
+  },
+  {
+    "id": "E3V5",
+    "run_id": "6e007526-d299-4f00-b10d-5b8cab45402b",
+    "checks": {
+      "measurements.csv": true,
+      "frames.csv": true,
+      "tracks.csv": true,
+      "quality.json": true,
+      "source_hashes": true,
+      "annotated_decoded_frames": 210,
+      "annotated_expected_frames": 210,
+      "annotated_size": [
+        450,
+        800
+      ],
+      "annotated_complete": true
+    }
+  }
+]

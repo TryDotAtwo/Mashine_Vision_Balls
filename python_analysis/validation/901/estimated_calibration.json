@@ -1,0 +1,14 @@
+{
+  "schema": "mvb.scalar_calibration.v1",
+  "width_px": 400,
+  "scale_mm_per_px": 0.10039169900717518,
+  "sigma_scale_mm_per_px": 0.00024069654959444015,
+  "reference_diameter_mm": 3.7,
+  "reference_sigma_mm": 0.0,
+  "observations": 24,
+  "mean_diameter_px": 36.85563683642364,
+  "std_diameter_px": 0.08836412479680109,
+  "source_csv": "D:\\ОИЯИ\\Mashine_Vision_Balls\\output\\simulation_holdout_901_20260930\\calibration_reference\\analysis\\measurements.csv",
+  "source_sha256": "f34d3aba94bc9056c8ab911fec08529d6f1fa5c0c4b5cf89b97d596eb13512f0",
+  "limitations": "Scalar scale for unchanged optical geometry; no distortion/refraction correction."
+}

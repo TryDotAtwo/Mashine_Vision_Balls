@@ -1,0 +1,11 @@
+{
+  "api_opencv_threads": 16,
+  "cli_opencv_threads": 2,
+  "checks": {
+    "measurements.csv": true,
+    "tracks.csv": true,
+    "frames.csv": true,
+    "quality.json": true
+  },
+  "timing_scope": "Runs shared the machine with other validation; not a controlled performance benchmark"
+}

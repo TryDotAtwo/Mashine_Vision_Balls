@@ -1,0 +1,61 @@
+{
+  "frames": 210,
+  "calibration_observations": 105,
+  "check_observations": 105,
+  "accepted_observations": 210,
+  "reference_diameter_mm": 3.98,
+  "calibration_median_px": 1560.400194734533,
+  "scale_mm_per_video_px": 0.002550627725778455,
+  "mean_check_mm": 3.9853073867947977,
+  "median_check_mm": 3.9866657284873286,
+  "conditional_bias_mm": 0.005307386794797088,
+  "conditional_rmse_mm": 0.033839170867857836,
+  "repeatability_std_mm": 0.03358066045640958,
+  "quantization_single_chord_u_mm": 0.0010412894086587851,
+  "conditional_two_chord_u_mm": 0.0014735878014906813,
+  "bootstrap_block_frames": 15,
+  "bootstrap_samples": 2000,
+  "bootstrap_seed": 1729,
+  "bootstrap_sensitivity": {
+    "5": {
+      "conditional_u_mean_mm": 0.0074364417881667986,
+      "conditional_bias_ci95_mm": [
+        -0.009484392988857268,
+        0.016878424532317207
+      ]
+    },
+    "15": {
+      "conditional_u_mean_mm": 0.007344955642372652,
+      "conditional_bias_ci95_mm": [
+        -0.00824639762565847,
+        0.017087557758194715
+      ]
+    },
+    "30": {
+      "conditional_u_mean_mm": 0.006787866736806524,
+      "conditional_bias_ci95_mm": [
+        -0.008064802339760459,
+        0.01510922276652295
+      ]
+    }
+  },
+  "conditional_u_mean_mm": 0.007344955642372652,
+  "conditional_bias_ci95_mm": [
+    -0.00824639762565847,
+    0.017087557758194715
+  ],
+  "reference_standard_uncertainty_mm": null,
+  "full_physical_uncertainty_mm": null,
+  "scope": "Conditional same-object scale-transfer check, not independent accuracy. Bootstrap assumes locally stationary blocks; drift and acceptance selection can bias it. Quantization is a conventional single-chord sensitivity model, not measured subpixel error or an error bound.",
+  "run_id": "3dd7d29f-cdfd-4add-9fd7-4c3849da4eae",
+  "video_sha256": "4b3103b07ee42663c9a0cfe6ab5e4981939c070ec8372af2f74a0b02294627b2",
+  "source_sha256": {
+    "series_analysis.py": "fe20cdd32c8e52554590eb7f722afb9cc927797065870a5ba4f3fc29ea9bbdf9",
+    "pipeline.py": "f4da2a8b59388e017bceba70e5ccf3d1731fd3dd920aa6c962113f3418c8b016",
+    "cv_geometry.py": "3069b87c96bb2296c5671cc5213c4e4bdf511f9c8b1aae6208c7a150f8adfa2b",
+    "experiment_math.py": "94652a7cbbd70db17fed12ee42c2597dd8ac189eb5f9b341ace2e95be9e55f78",
+    "reporting.py": "6e61aa59cd87d0806803a9eda0532fc7278e5ce0fd08e84ded0232cde35009e3",
+    "clickhouse_store.py": "e92227e7b48115dd6b374e390f6998289843dff1f6454e28fd30b3f7431a9a38"
+  },
+  "metrology_source_sha256": "36415baa6b77f16405502442ad0f59f08eddd9a90609eec25979ff7d02bd0909"
+}

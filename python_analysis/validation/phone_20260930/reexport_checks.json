@@ -1,0 +1,56 @@
+[
+  {
+    "id": "E3V0",
+    "run_id": "37827145-0260-41b1-a4b8-0df5c1e751d1",
+    "tables_equal": {
+      "measurements.csv": true,
+      "tracks.csv": true,
+      "frames.csv": true
+    }
+  },
+  {
+    "id": "E3V1",
+    "run_id": "9c7b2831-f446-45a4-8eb3-d3db241eeb83",
+    "tables_equal": {
+      "measurements.csv": true,
+      "tracks.csv": true,
+      "frames.csv": true
+    }
+  },
+  {
+    "id": "E3V2",
+    "run_id": "2d46afd6-eaa6-4ccd-855d-02ed30e0f3e4",
+    "tables_equal": {
+      "measurements.csv": true,
+      "tracks.csv": true,
+      "frames.csv": true
+    }
+  },
+  {
+    "id": "E3V3",
+    "run_id": "944ba81c-0cb7-4cb4-8d28-037d6cfc741d",
+    "tables_equal": {
+      "measurements.csv": true,
+      "tracks.csv": true,
+      "frames.csv": true
+    }
+  },
+  {
+    "id": "E3V4",
+    "run_id": "2dbb69d3-0c60-4e14-b0f8-758c22e16571",
+    "tables_equal": {
+      "measurements.csv": true,
+      "tracks.csv": true,
+      "frames.csv": true
+    }
+  },
+  {
+    "id": "E3V5",
+    "run_id": "25d3df5c-3962-45d4-b737-7b437918d22b",
+    "tables_equal": {
+      "measurements.csv": true,
+      "tracks.csv": true,
+      "frames.csv": true
+    }
+  }
+]

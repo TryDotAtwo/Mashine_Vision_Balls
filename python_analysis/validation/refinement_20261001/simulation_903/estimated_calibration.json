@@ -1,0 +1,18 @@
+{
+  "schema": "mvb.scalar_calibration.v1",
+  "width_px": 400,
+  "scale_mm_per_px": 0.10048774800201682,
+  "sigma_scale_mm_per_px": 8.552865049258567e-05,
+  "reference_diameter_mm": 3.7,
+  "reference_sigma_mm": 0.0,
+  "observations": 24,
+  "mean_diameter_px": 36.82040918984213,
+  "std_diameter_px": 0.03133914304188399,
+  "source_csv": "measurements.csv",
+  "source_sha256": "cad42421fda240c45fc1a2c37ccf9d149a262b23056ec6a76eb9b286e934f081",
+  "status": "reference_provided",
+  "repeatability_scale_mm_per_px": 8.552865049258567e-05,
+  "limitations": "Scalar scale for unchanged optical geometry; no distortion/refraction correction.",
+  "private_paths_redacted": true,
+  "original_file_sha256": "642d8595fdc1450d033fc546a307d4660cf18920175cef67d0b427460b978661"
+}

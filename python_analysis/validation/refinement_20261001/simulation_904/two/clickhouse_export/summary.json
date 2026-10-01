@@ -1,0 +1,27 @@
+{
+  "sampled_frames": 24,
+  "frames_with_detections": 24,
+  "decoded_frames": 24,
+  "reported_frames": 24,
+  "decode_status": "complete",
+  "detection_ratio": 1.0,
+  "measurements": 48,
+  "tracks": 2,
+  "eligible_tracks": 2,
+  "min_track_observations": 2,
+  "units": "mm",
+  "calibration_status": "reference_provided",
+  "track_diameter_median_px": 36.79359172708467,
+  "track_diameter_std_px": 7.104522068244823,
+  "track_diameter_median_mm": 3.697305173560375,
+  "track_diameter_std_mm": 0.7139174232685529,
+  "timestamp_fallback_frames": 0,
+  "edge_fit_method": "radial",
+  "quality_counts": {
+    "accepted": 48
+  },
+  "analysis_wall_seconds_before_storage": 2.526747100004286,
+  "limitations": "Track IDs can split/swap at occlusion or crossing; model uncertainty is not validated accuracy.",
+  "storage": "clickhouse",
+  "run_id": "d5964601-d594-47b0-b354-ae6da4172571"
+}

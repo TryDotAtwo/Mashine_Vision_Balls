@@ -1,0 +1,22 @@
+name: mvb-analysis
+services:
+  clickhouse:
+    image: clickhouse/clickhouse-server:26.3.12.3
+    ports:
+      - "127.0.0.1:8124:8123"
+    environment:
+      CLICKHOUSE_DB: mvb_analysis
+      CLICKHOUSE_USER: mvb
+      CLICKHOUSE_PASSWORD: ${MVB_CLICKHOUSE_PASSWORD:?Set MVB_CLICKHOUSE_PASSWORD}
+      CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: "1"
+    volumes:
+      - mvb-clickhouse-data:/var/lib/clickhouse
+      - mvb-clickhouse-logs:/var/log/clickhouse-server
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://127.0.0.1:8123/ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+volumes:
+  mvb-clickhouse-data:
+  mvb-clickhouse-logs:

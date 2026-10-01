@@ -1,0 +1,15 @@
+{
+  "tp": 0,
+  "fp": 0,
+  "fn": 24,
+  "visible_truth_observations": 24,
+  "ignored_occluded_predictions": 0,
+  "id_switches": 0,
+  "precision": null,
+  "recall": 0.0,
+  "diameter_bias_mm": null,
+  "diameter_rmse_mm": null,
+  "center_rmse_px": null,
+  "matched_observations": 0,
+  "matches": []
+}

@@ -1,0 +1,304 @@
+{
+  "tp": 48,
+  "fp": 0,
+  "fn": 0,
+  "visible_truth_observations": 48,
+  "ignored_occluded_predictions": 0,
+  "id_switches": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "diameter_bias_mm": 0.00992874674494068,
+  "diameter_rmse_mm": 0.018002450692958017,
+  "center_rmse_px": 0.18448445198211103,
+  "matched_observations": 48,
+  "matches": [
+    {
+      "frame_index": 0,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.005280230737638281
+    },
+    {
+      "frame_index": 0,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.0045277029049684
+    },
+    {
+      "frame_index": 1,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": 0.010001862469961154
+    },
+    {
+      "frame_index": 1,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.01132397496802362
+    },
+    {
+      "frame_index": 2,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": 0.0026541108932454094
+    },
+    {
+      "frame_index": 2,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.016732895139074166
+    },
+    {
+      "frame_index": 3,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": 0.00755666459068971
+    },
+    {
+      "frame_index": 3,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.010070681582803331
+    },
+    {
+      "frame_index": 4,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": 0.005802485110800504
+    },
+    {
+      "frame_index": 4,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.008768890646575933
+    },
+    {
+      "frame_index": 5,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": 0.00306606212842242
+    },
+    {
+      "frame_index": 5,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.002134062998352171
+    },
+    {
+      "frame_index": 6,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.00026003703409793744
+    },
+    {
+      "frame_index": 6,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.009558302050466594
+    },
+    {
+      "frame_index": 7,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.0035213036544217147
+    },
+    {
+      "frame_index": 7,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.0016006419750302925
+    },
+    {
+      "frame_index": 8,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": 0.04044131170893994
+    },
+    {
+      "frame_index": 8,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.04410619034163332
+    },
+    {
+      "frame_index": 9,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": 0.008625833245542669
+    },
+    {
+      "frame_index": 9,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.04616449370949116
+    },
+    {
+      "frame_index": 10,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": 0.0333469843246359
+    },
+    {
+      "frame_index": 10,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.020205790019522496
+    },
+    {
+      "frame_index": 11,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.00489135093980364
+    },
+    {
+      "frame_index": 11,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.015025330679644178
+    },
+    {
+      "frame_index": 12,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": 0.006122272730966216
+    },
+    {
+      "frame_index": 12,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.006670816103207855
+    },
+    {
+      "frame_index": 13,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": 0.007896264780653528
+    },
+    {
+      "frame_index": 13,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.012362740751476586
+    },
+    {
+      "frame_index": 14,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.005837592007398751
+    },
+    {
+      "frame_index": 14,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.00866103189252243
+    },
+    {
+      "frame_index": 15,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -7.429564119121324e-05
+    },
+    {
+      "frame_index": 15,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.017650725240988763
+    },
+    {
+      "frame_index": 16,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": 0.003915425137808182
+    },
+    {
+      "frame_index": 16,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": -0.0004327947035358548
+    },
+    {
+      "frame_index": 17,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.0020089859044016833
+    },
+    {
+      "frame_index": 17,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.006185326307909911
+    },
+    {
+      "frame_index": 18,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.010502516138295004
+    },
+    {
+      "frame_index": 18,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.004795554153750992
+    },
+    {
+      "frame_index": 19,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": 0.001214535663060623
+    },
+    {
+      "frame_index": 19,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.011525476843079474
+    },
+    {
+      "frame_index": 20,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": 0.0016251196652761202
+    },
+    {
+      "frame_index": 20,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.006293753752619757
+    },
+    {
+      "frame_index": 21,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": 0.061106338876182775
+    },
+    {
+      "frame_index": 21,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.04702646802856414
+    },
+    {
+      "frame_index": 22,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.0013981241870202332
+    },
+    {
+      "frame_index": 22,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.0009446518827918027
+    },
+    {
+      "frame_index": 23,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": 0.0026438851341272773
+    },
+    {
+      "frame_index": 23,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.0024324162721471865
+    }
+  ]
+}

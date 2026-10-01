@@ -1,0 +1,114 @@
+{
+  "method": "Manual approximate marking on 360px source-only tiles before inspecting new detections. Development check on known video, not independent test. Radius is approximate, not diameter ground truth.",
+  "scale_to_source": 3,
+  "visible": [
+    {
+      "frame": 101,
+      "x": 588,
+      "y": 504,
+      "r": 42
+    },
+    {
+      "frame": 137,
+      "x": 348,
+      "y": 708,
+      "r": 42
+    },
+    {
+      "frame": 173,
+      "x": 585,
+      "y": 504,
+      "r": 42
+    },
+    {
+      "frame": 317,
+      "x": 537,
+      "y": 408,
+      "r": 42
+    },
+    {
+      "frame": 353,
+      "x": 501,
+      "y": 495,
+      "r": 45
+    },
+    {
+      "frame": 389,
+      "x": 495,
+      "y": 546,
+      "r": 48
+    },
+    {
+      "frame": 425,
+      "x": 531,
+      "y": 537,
+      "r": 51
+    },
+    {
+      "frame": 461,
+      "x": 408,
+      "y": 492,
+      "r": 48
+    },
+    {
+      "frame": 497,
+      "x": 303,
+      "y": 432,
+      "r": 48
+    },
+    {
+      "frame": 533,
+      "x": 441,
+      "y": 249,
+      "r": 45
+    },
+    {
+      "frame": 569,
+      "x": 465,
+      "y": 618,
+      "r": 48
+    },
+    {
+      "frame": 605,
+      "x": 447,
+      "y": 279,
+      "r": 48
+    },
+    {
+      "frame": 641,
+      "x": 306,
+      "y": 636,
+      "r": 48
+    },
+    {
+      "frame": 677,
+      "x": 294,
+      "y": 273,
+      "r": 48
+    },
+    {
+      "frame": 713,
+      "x": 525,
+      "y": 501,
+      "r": 48
+    },
+    {
+      "frame": 749,
+      "x": 225,
+      "y": 501,
+      "r": 48
+    },
+    {
+      "frame": 785,
+      "x": 402,
+      "y": 249,
+      "r": 48
+    }
+  ],
+  "ambiguous": [
+    209,
+    245,
+    281,
+    821
+  ]
+}

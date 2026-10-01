@@ -1,0 +1,74 @@
+[
+  {
+    "series": "E3V0",
+    "method": "Алгебраическая",
+    "csv_sha256": "914ec4125f8870f3b92d265b389728a890bf733b89cf842d655ffa26f77646b8",
+    "run_id": "37827145-0260-41b1-a4b8-0df5c1e751d1"
+  },
+  {
+    "series": "E3V0",
+    "method": "Радиальная",
+    "csv_sha256": "475a53bc9c41e7ebd80a2c700881fb6f962031004473c5cd848a604a8dc7a763",
+    "run_id": "04eb53d8-626a-41eb-8a02-6e17333c8ba4"
+  },
+  {
+    "series": "E3V1",
+    "method": "Алгебраическая",
+    "csv_sha256": "58af8d92abc4873099d8f3e9c65c4651f228efc8fe83feb6e0e90d2f6a81b198",
+    "run_id": "9c7b2831-f446-45a4-8eb3-d3db241eeb83"
+  },
+  {
+    "series": "E3V1",
+    "method": "Радиальная",
+    "csv_sha256": "0d08ef18b29cfd84b0b97102acc41f994e004ee80946a4aeafb7f7c6316b1696",
+    "run_id": "225762fb-b062-4ed4-a9d5-1dac4916ae46"
+  },
+  {
+    "series": "E3V2",
+    "method": "Алгебраическая",
+    "csv_sha256": "a5bd5021bb16124c9972d824977ba3e058de138037650434743d63fb8b03eccd",
+    "run_id": "2d46afd6-eaa6-4ccd-855d-02ed30e0f3e4"
+  },
+  {
+    "series": "E3V2",
+    "method": "Радиальная",
+    "csv_sha256": "150bd9ba9559eb1e8f1100ddbb0216fa75ecf3450a25ff2bc446c279430cf5a8",
+    "run_id": "2c1b5f3d-20b1-4c19-987e-c225caca1b85"
+  },
+  {
+    "series": "E3V3",
+    "method": "Алгебраическая",
+    "csv_sha256": "2cf4381a53d40675446226b29afbf3e821d52da350e29988c3cb5654de6d87ac",
+    "run_id": "944ba81c-0cb7-4cb4-8d28-037d6cfc741d"
+  },
+  {
+    "series": "E3V3",
+    "method": "Радиальная",
+    "csv_sha256": "81033c3d8dceecc25eeec3088fe317ca1aa567d716179d4ab4a549e261171201",
+    "run_id": "edfe5f99-0b94-4cca-82d6-38b271734323"
+  },
+  {
+    "series": "E3V4",
+    "method": "Алгебраическая",
+    "csv_sha256": "10c1304b435029b806b60d3bf042d5cbb3fe0de3e046a5364f46549c85055f03",
+    "run_id": "2dbb69d3-0c60-4e14-b0f8-758c22e16571"
+  },
+  {
+    "series": "E3V4",
+    "method": "Радиальная",
+    "csv_sha256": "32f985a874b8449fb7d399791a98246a85e6b341cba98962f9952171595a2b6d",
+    "run_id": "b1414d0f-ec05-4102-ae75-00ffbf147e7a"
+  },
+  {
+    "series": "E3V5",
+    "method": "Алгебраическая",
+    "csv_sha256": "a1bbc91478040817ce95f9fa539269a408adc8d97dc95105b9dc298e83319bfc",
+    "run_id": "25d3df5c-3962-45d4-b737-7b437918d22b"
+  },
+  {
+    "series": "E3V5",
+    "method": "Радиальная",
+    "csv_sha256": "e11cd2359ea4e9b47aede43e7ebad8c88246d856ca6310ac161aaeb9d5cd6614",
+    "run_id": "6e007526-d299-4f00-b10d-5b8cab45402b"
+  }
+]

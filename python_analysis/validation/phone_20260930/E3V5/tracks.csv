@@ -1,0 +1,2 @@
+ball_id,observations,time_start_s,time_end_s,diameter_px_median,diameter_px_mean,diameter_px_std,diameter_mm_median,diameter_mm_mean,diameter_mm_std,sigma_model_mm_mean
+0,210,0,3.4827777777777778,1558.203001495618,1528.1026181896764,84.91122660879543,4.093234129327843,4.014163612754924,0.2230527924696948,

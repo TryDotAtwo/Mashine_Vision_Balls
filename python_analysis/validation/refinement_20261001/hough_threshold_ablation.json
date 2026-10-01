@@ -1,0 +1,104 @@
+[
+  {
+    "frame": 450,
+    "thresholds": [
+      12,
+      16,
+      18,
+      22,
+      26
+    ],
+    "detector_seconds": 0.024678399997355882,
+    "refined": 1,
+    "target_matches": 1,
+    "extra": 0
+  },
+  {
+    "frame": 450,
+    "thresholds": [
+      18
+    ],
+    "detector_seconds": 0.006529199999931734,
+    "refined": 1,
+    "target_matches": 1,
+    "extra": 0
+  },
+  {
+    "frame": 450,
+    "thresholds": [
+      22
+    ],
+    "detector_seconds": 0.006389699999999721,
+    "refined": 1,
+    "target_matches": 1,
+    "extra": 0
+  },
+  {
+    "frame": 600,
+    "thresholds": [
+      12,
+      16,
+      18,
+      22,
+      26
+    ],
+    "detector_seconds": 0.02517200000147568,
+    "refined": 1,
+    "target_matches": 1,
+    "extra": 0
+  },
+  {
+    "frame": 600,
+    "thresholds": [
+      18
+    ],
+    "detector_seconds": 0.0074107000036747195,
+    "refined": 1,
+    "target_matches": 1,
+    "extra": 0
+  },
+  {
+    "frame": 600,
+    "thresholds": [
+      22
+    ],
+    "detector_seconds": 0.006449000000429805,
+    "refined": 1,
+    "target_matches": 1,
+    "extra": 0
+  },
+  {
+    "frame": 750,
+    "thresholds": [
+      12,
+      16,
+      18,
+      22,
+      26
+    ],
+    "detector_seconds": 0.07814870000584051,
+    "refined": 1,
+    "target_matches": 1,
+    "extra": 0
+  },
+  {
+    "frame": 750,
+    "thresholds": [
+      18
+    ],
+    "detector_seconds": 0.010961100000713486,
+    "refined": 1,
+    "target_matches": 1,
+    "extra": 0
+  },
+  {
+    "frame": 750,
+    "thresholds": [
+      22
+    ],
+    "detector_seconds": 0.010377799997513648,
+    "refined": 1,
+    "target_matches": 1,
+    "extra": 0
+  }
+]

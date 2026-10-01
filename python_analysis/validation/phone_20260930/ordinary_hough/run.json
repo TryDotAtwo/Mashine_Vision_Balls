@@ -1,0 +1,90 @@
+{
+  "schema": "mvb.series.v1",
+  "video": "drive_ordinary_ball.mp4",
+  "fps": 30.0,
+  "width_px": 1080,
+  "height_px": 1080,
+  "decoded_frames": 855,
+  "reported_frames": 855,
+  "timestamp_source": "decoder CAP_PROP_POS_MSEC; annotated video uses mean FPS",
+  "video_config": {
+    "video_path": "drive_ordinary_ball.mp4",
+    "output_dir": "ordinary_hough",
+    "frame_step": 1,
+    "max_frames": 0,
+    "preview_frames": 6,
+    "interactive_preview": false,
+    "display_scale": 0.45,
+    "live_plots": false,
+    "live_plot_max_points": 3000
+  },
+  "detection_config": {
+    "max_detection_dimension_px": 700,
+    "detector_profile": "hough",
+    "min_ball_diameter_px": 80,
+    "max_ball_diameter_px": 120,
+    "dark_contrast_min": 8.0,
+    "roi": [
+      0.15,
+      0.15,
+      0.85,
+      0.85
+    ],
+    "min_ball_diameter_mm": 1.0,
+    "max_ball_diameter_mm": 10.0,
+    "sigma_ball_px": 1.5,
+    "sigma_reference_px": 1.5,
+    "reference_min_radius_frac": 0.25,
+    "reference_max_radius_frac": 0.6,
+    "refine_with_edge_fit": true,
+    "edge_refine_band_px": 4,
+    "adaptive_hough": true,
+    "hough_param2_reference": [
+      22,
+      26,
+      28,
+      32,
+      36
+    ],
+    "hough_param2_ball": [
+      12,
+      16,
+      18,
+      22,
+      26
+    ],
+    "min_ball_edge_support": 0.2,
+    "ball_candidate_dedupe_px": 14.0,
+    "second_ball_score_ratio": 0.92,
+    "clear_track_after_lost_frames": 0
+  },
+  "measurement_mode": "pixel",
+  "fov_inputs": null,
+  "fov_uncertainty": null,
+  "reference": null,
+  "calibration": null,
+  "tracking_distance_px": 100,
+  "tracking_max_missed": 5,
+  "min_track_observations": 2,
+  "cell_mask": true,
+  "versions": {
+    "python": "3.11.5",
+    "opencv": "4.12.0",
+    "numpy": "2.2.6"
+  },
+  "video_sha256": "82910bf589e7d68e6535d1baca438420107db9cffbaef3e00d7a4ee2d0e4ffc7",
+  "source_sha256": {
+    "series_analysis.py": "5b22b83337bee8bb5dc801fc17a5bff731eb3d6b533b2b58754cf4438178a2de",
+    "pipeline.py": "68516b4302fd3d2cd361ee51583bac8be8cccc4d3978390422c14d7008d53613",
+    "cv_geometry.py": "e4ddc9f4eef7d2b824aa0e7ba4ee3aa3b66f428debdae673c51eb31e070bf4ba",
+    "experiment_math.py": "94652a7cbbd70db17fed12ee42c2597dd8ac189eb5f9b341ace2e95be9e55f78",
+    "reporting.py": "6e61aa59cd87d0806803a9eda0532fc7278e5ce0fd08e84ded0232cde35009e3",
+    "clickhouse_store.py": "ff17cb09f5ca96dd01c40cf489fc67dd322eefd79b53f7e39b12e426f70ca34c"
+  },
+  "storage": "clickhouse",
+  "run_id": "34686528-b434-45cb-bd99-925aee84392d",
+  "publication_metadata": {
+    "paths_redacted": true,
+    "original_run_json_sha256": "bb64ec51a6e209642546c9e7632ab88ab931522b63a7d87859da0919188c5ea8"
+  }
+}

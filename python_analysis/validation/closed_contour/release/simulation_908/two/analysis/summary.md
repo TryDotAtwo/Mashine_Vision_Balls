@@ -1,0 +1,24 @@
+# Анализ серии
+
+- sampled_frames: 24
+- frames_with_detections: 22
+- decoded_frames: 24
+- reported_frames: 24
+- decode_status: complete
+- detection_ratio: 0.9166666666666666
+- measurements: 44
+- tracks: 2
+- eligible_tracks: 2
+- min_track_observations: 2
+- units: mm
+- calibration_status: reference_provided
+- track_diameter_median_px: 36.68840187415155
+- track_diameter_std_px: 6.860831584067251
+- track_diameter_median_mm: 3.6867348821260935
+- track_diameter_std_mm: 0.6894295153039589
+- timestamp_fallback_frames: 0
+- edge_fit_method: radial
+- quality_counts: {'accepted': 44, 'open_or_localized_contour': 2}
+- analysis_wall_seconds_before_storage: 2.4832552000007126
+- limitations: Track IDs can split/swap at occlusion or crossing; model uncertainty is not validated accuracy.
+- storage: offline

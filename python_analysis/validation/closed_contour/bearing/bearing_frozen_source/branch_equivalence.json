@@ -1,0 +1,5 @@
+{
+  "frozen_sha256": "3069b87c96bb2296c5671cc5213c4e4bdf511f9c8b1aae6208c7a150f8adfa2b",
+  "current_sha256": "d15e5ed247b9795440ac41972bd2020b7f7b5384faa52b40f28a33d909e03efb",
+  "check": "Full module AST equality after removing the unused either-polarity branch. All six bearing runs use the explicit rising-polarity branch via dark-ball profile. No measurement values or run hashes rewritten."
+}

@@ -1,0 +1,39 @@
+# Базовый шаблон для текущего стенда.
+# ВАЖНО: 38.13 мм здесь - расстояние "ячейка-чехол", а не внутренний диаметр ячейки.
+
+video_path = data/videos/Ball_For_MV.mp4
+measurement_mode = fov
+output_dir = output/analysis/baseline
+frame_step = 15
+max_frames = 0
+preview_frames = 6
+interactive_preview = false
+
+min_ball_diam_mm = 1.0
+max_ball_diam_mm = 10.0
+expected_ball_diameter_mm = 0.0
+sigma_ball_px = 1.5
+sigma_reference_px = 1.5
+
+ball_to_object_mm = 55.0
+cell_to_cover_mm = 38.13
+cover_thickness_mm = 0.85
+cell_cover_gap_mm = 6.3
+zoom = 1.0
+fov_deg = 79.0
+calib_coef = 1.0
+sigma_distance_mm = 0.5
+sigma_zoom = 0.05
+sigma_fov_deg = 0.5
+
+reference_name = cell
+reference_diameter_mm = 0.0
+reference_sigma_mm = 0.0
+reference_min_radius_frac = 0.25
+reference_max_radius_frac = 0.60
+
+cell_inner_diameter_mm = 0.0
+cell_inner_sigma_mm = 0.0
+delta_level_mm = 6.3
+level_sigma_mm = 0.2
+target_rel_mass_error = 0.03

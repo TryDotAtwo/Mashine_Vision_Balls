@@ -61,3 +61,7 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+
+# Scientific replay hashes refer to exact source bytes, including line endings.
+python_analysis/src/mvb/*.py -text
+python_analysis/validation/** -text
