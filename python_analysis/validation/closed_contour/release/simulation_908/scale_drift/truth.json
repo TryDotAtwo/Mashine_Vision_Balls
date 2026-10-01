@@ -1,0 +1,513 @@
+{
+  "schema": "mvb.simulation.v1",
+  "scenario": "scale_drift",
+  "seed": 908,
+  "config": {
+    "width": 400,
+    "height": 400,
+    "fps": 30.0,
+    "frames": 24,
+    "field_mm": 40.0,
+    "distance_mm": 50.0,
+    "bath_radius_mm": 17.0,
+    "noise_sigma": 0.0,
+    "blur_sigma": 0.6,
+    "exposure_s": 0.002,
+    "scale_drift": 0.06,
+    "radial_k1": 0.0,
+    "elliptical_ratio": 1.0,
+    "highlight": false
+  },
+  "initial_particles": [
+    {
+      "object_id": 0,
+      "diameter_mm": 3.705260573302832,
+      "x_mm": -6.898570054000439,
+      "y_mm": -3.659346033795104,
+      "direction": 0.4090835927913186,
+      "speed_m_s": 0.025,
+      "temperature_k": 300.0
+    }
+  ],
+  "sources": {
+    "jinr_2024": {
+      "url": "https://www1.jinr.ru/Preprints/2024/060(P18-2024-60).pdf",
+      "used": "printed pp. 1-2 diameter intervals; eq.13 film thickness; eq.5 cooling; table P.1 material properties"
+    },
+    "gauthier_2019": {
+      "url": "https://arxiv.org/html/1901.04218",
+      "used": "eq.5 propulsion/drag model, reflections; fitted alpha=beta=15 and delta_h=1.45 micrometres concern ethanol/silicone oil"
+    },
+    "local_echaya": {
+      "path": "Статья в ЭЧАЯ/Using of frozen mesitylene beads with Rupert's droplet properties in cryogenic neutron moderators_M.V.Bulavin_Письма в ЭЧАЯ_final_rus (1).pdf",
+      "used": "pp.1,3-6: millimetre scale, separated cells, motion, internal cavity and light dispersion"
+    }
+  },
+  "assumptions": [
+    "Prescribed sphere projections and approximate shading; no optical ray tracing",
+    "Material constants from JINR table P.1 are treated as fixed",
+    "Propulsion fit transferred from other liquids solely to generate test trajectories",
+    "No solidification, adhesion, particle collisions or CFD; crossing is a projection stress test",
+    "Field, FPS, depth, noise, blur and deformation are chosen test parameters, not measured camera data"
+  ],
+  "visibility_threshold": 0.65,
+  "truth": [
+    {
+      "frame_index": 0,
+      "time_s": 0.0,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 131.0142994599956,
+          "y_px": 163.40653966204897,
+          "diameter_px": 37.052605733028315,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 300.0,
+          "speed_m_s": 0.025,
+          "pixels_per_mm": 10.0,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 1,
+      "time_s": 0.03333333333333333,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 139.5592700266772,
+          "y_px": 167.19351331094862,
+          "diameter_px": 36.59608055391231,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 299.5650511080859,
+          "speed_m_s": 0.025759439780840804,
+          "pixels_per_mm": 9.87678999355528,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 2,
+      "time_s": 0.06666666666666667,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 148.0943396641141,
+          "y_px": 170.97071806677252,
+          "diameter_px": 36.16990811266206,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 299.13073988955307,
+          "speed_m_s": 0.02651409447321589,
+          "pixels_per_mm": 9.761771782873712,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 3,
+      "time_s": 0.1,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 156.61007913149965,
+          "y_px": 174.73112613237032,
+          "diameter_px": 35.79038220305627,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 298.6970657208969,
+          "speed_m_s": 0.02726398908574762,
+          "pixels_per_mm": 9.659342843775516,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 4,
+      "time_s": 0.13333333333333333,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 165.115928514237,
+          "y_px": 178.47639488456747,
+          "diameter_px": 35.47100031281001,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 298.2640279789177,
+          "speed_m_s": 0.028009148508506627,
+          "pixels_per_mm": 9.573145966679347,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 5,
+      "time_s": 0.16666666666666666,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 173.63794767801318,
+          "y_px": 182.21590374229302,
+          "diameter_px": 35.222396332653794,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 297.8316260407208,
+          "speed_m_s": 0.02874959751351613,
+          "pixels_per_mm": 9.506051095687694,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 6,
+      "time_s": 0.2,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 182.21613869138548,
+          "y_px": 185.9655831233119,
+          "diameter_px": 35.052397093004295,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 297.3998592837165,
+          "speed_m_s": 0.029485360755254365,
+          "pixels_per_mm": 9.460170587073973,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 7,
+      "time_s": 0.23333333333333334,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 190.90156850264947,
+          "y_px": 189.7466474434774,
+          "diameter_px": 34.96613077396708,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 296.9687270856199,
+          "speed_m_s": 0.030216462771155108,
+          "pixels_per_mm": 9.436888467684373,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 8,
+      "time_s": 0.26666666666666666,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 199.75339526648773,
+          "y_px": 193.58428716348746,
+          "diameter_px": 34.96613077396708,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 296.5382288244509,
+          "speed_m_s": 0.030942927982106315,
+          "pixels_per_mm": 9.436888467684373,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 9,
+      "time_s": 0.3,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 208.8357979362446,
+          "y_px": 197.50632656268166,
+          "diameter_px": 35.052397093004295,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 296.1083638785347,
+          "speed_m_s": 0.03166478069294689,
+          "pixels_per_mm": 9.460170587073973,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 10,
+      "time_s": 0.3333333333333333,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 218.21473710241634,
+          "y_px": 201.54181942610106,
+          "diameter_px": 35.222396332653794,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 295.67913162650103,
+          "speed_m_s": 0.03238204509296155,
+          "pixels_per_mm": 9.506051095687694,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 11,
+      "time_s": 0.36666666666666664,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 227.95444171481432,
+          "y_px": 205.71953696571066,
+          "diameter_px": 35.47100031281001,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 295.2505314472848,
+          "speed_m_s": 0.033094745256373896,
+          "pixels_per_mm": 9.573145966679347,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 12,
+      "time_s": 0.4,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 238.1135262148236,
+          "y_px": 210.06630317429833,
+          "diameter_px": 35.79038220305627,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 294.8225627201257,
+          "speed_m_s": 0.03380290514283746,
+          "pixels_per_mm": 9.659342843775516,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 13,
+      "time_s": 0.43333333333333335,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 248.74070095877596,
+          "y_px": 214.60515467332408,
+          "diameter_px": 36.16990811266206,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 294.3952248245683,
+          "speed_m_s": 0.03450654859792513,
+          "pixels_per_mm": 9.761771782873712,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 14,
+      "time_s": 0.4666666666666667,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 259.8701497940768,
+          "y_px": 219.3533468981712,
+          "diameter_px": 36.59608055391231,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 293.96851714046215,
+          "speed_m_s": 0.03520569935361649,
+          "pixels_per_mm": 9.87678999355528,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 15,
+      "time_s": 0.5,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 271.5168108565934,
+          "y_px": 224.3202959840204,
+          "diameter_px": 37.052605733028315,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 293.54243904796186,
+          "speed_m_s": 0.03590038102878349,
+          "pixels_per_mm": 10.0,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 16,
+      "time_s": 0.5333333333333333,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 283.6719960521019,
+          "y_px": 229.50563068154577,
+          "diameter_px": 37.520664824889266,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 293.1169899275268,
+          "speed_m_s": 0.036590617129674166,
+          "pixels_per_mm": 10.126322854385306,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 17,
+      "time_s": 0.5666666666666667,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 296.29998701115414,
+          "y_px": 234.89761729961293,
+          "diameter_px": 37.97946411748617,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 292.6921691599212,
+          "speed_m_s": 0.03727643105039459,
+          "pixels_per_mm": 10.250146613476002,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 18,
+      "time_s": 0.6,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 309.33639238775004,
+          "y_px": 240.47228896182855,
+          "diameter_px": 38.40711383888521,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 292.26797612621436,
+          "speed_m_s": 0.03795784607338899,
+          "pixels_per_mm": 10.365563522203107,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 19,
+      "time_s": 0.6333333333333333,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 322.6890674757125,
+          "y_px": 246.19362618807372,
+          "diameter_px": 38.78183702341587,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 291.84441020778047,
+          "speed_m_s": 0.03863488536991801,
+          "pixels_per_mm": 10.46669627039108,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 20,
+      "time_s": 0.6666666666666666,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 336.2422105852011,
+          "y_px": 252.01506737063153,
+          "diameter_px": 39.08344089391458,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 291.4214707862985,
+          "speed_m_s": 0.039307572000535175,
+          "pixels_per_mm": 10.548095099038067,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 21,
+      "time_s": 0.7,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 349.8393591536478,
+          "y_px": 257.87300774471754,
+          "diameter_px": 39.294906336755034,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 290.9991572437526,
+          "speed_m_s": 0.039975928915561586,
+          "pixels_per_mm": 10.605166778251158,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 22,
+      "time_s": 0.7333333333333333,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 336.700478046819,
+          "y_px": 253.41980581078877,
+          "diameter_px": 39.4038874637478,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 290.57746896243157,
+          "speed_m_s": 0.04063997895555874,
+          "pixels_per_mm": 10.634579318836831,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    },
+    {
+      "frame_index": 23,
+      "time_s": 0.7666666666666667,
+      "objects": [
+        {
+          "object_id": 0,
+          "x_px": 322.924088304494,
+          "y_px": 248.73055267979376,
+          "diameter_px": 39.4038874637478,
+          "diameter_mm": 3.705260573302832,
+          "temperature_k": 290.1564053249292,
+          "speed_m_s": 0.04129974485179965,
+          "pixels_per_mm": 10.634579318836831,
+          "hidden": false,
+          "visible_fraction": 1.0,
+          "score_detection": true
+        }
+      ]
+    }
+  ],
+  "video_sha256": "3187edac397debe18cc035047ae32b61e1a2ef767a5de53bc4430638c2c76b28"
+}

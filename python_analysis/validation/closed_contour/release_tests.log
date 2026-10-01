@@ -1,0 +1,41 @@
+test_empty_completed_run (test_clickhouse_store.ClickHouseIntegrationTests.test_empty_completed_run) ... ok
+test_sql_medians_and_independent_runs (test_clickhouse_store.ClickHouseIntegrationTests.test_sql_medians_and_independent_runs) ... ok
+test_unpublished_partial_run_is_not_readable (test_clickhouse_store.ClickHouseIntegrationTests.test_unpublished_partial_run_is_not_readable) ... ok
+test_video_database_and_reexport (test_clickhouse_store.ClickHouseIntegrationTests.test_video_database_and_reexport) ... ok
+test_reject_sql_identifier_and_credential_url (test_clickhouse_store.ValidationTests.test_reject_sql_identifier_and_credential_url) ... ok
+test_load_key_value_config (test_config.ConfigTests.test_load_key_value_config) ... ok
+test_fit_circle_kasa_recover_synthetic_circle (test_cv_geometry.CvGeometryTests.test_fit_circle_kasa_recover_synthetic_circle) ... ok
+test_refine_circle_from_edges_improves_approx (test_cv_geometry.CvGeometryTests.test_refine_circle_from_edges_improves_approx) ... ok
+test_evaporated_mass_matches_formula (test_experiment_math.ExperimentMathTests.test_evaporated_mass_matches_formula) ... ok
+test_fov_scale_and_measurement_are_positive (test_experiment_math.ExperimentMathTests.test_fov_scale_and_measurement_are_positive) ... ok
+test_reference_measurement_uses_ratio (test_experiment_math.ExperimentMathTests.test_reference_measurement_uses_ratio) ... ok
+test_required_tolerance (test_experiment_math.ExperimentMathTests.test_required_tolerance) ... ok
+test_common_image_uncertainty_cancels_in_same_object_ratio (test_metrology.BearingMetrologyTests.test_common_image_uncertainty_cancels_in_same_object_ratio) ... ok
+test_missing_frames_and_seed_preserved (test_metrology.BearingMetrologyTests.test_missing_frames_and_seed_preserved) ... ok
+test_mixed_tracks_and_duplicate_frames_rejected (test_metrology.BearingMetrologyTests.test_mixed_tracks_and_duplicate_frames_rejected) ... ok
+test_scale_uses_only_first_half_and_reports_unknown_full_uncertainty (test_metrology.BearingMetrologyTests.test_scale_uses_only_first_half_and_reports_unknown_full_uncertainty) ... ok
+test_dark_silhouette_rejects_bubble_and_clipped_circle (test_phone_analysis.PhoneTests.test_dark_silhouette_rejects_bubble_and_clipped_circle) ... ok
+test_decoder_short_read_is_not_complete (test_phone_analysis.PhoneTests.test_decoder_short_read_is_not_complete) ... ok
+test_pixel_exports_and_provisional_reference (test_phone_analysis.PhoneTests.test_pixel_exports_and_provisional_reference) ... ok
+test_sql_preserves_unknown_scale_and_reexport (test_phone_analysis.PixelDatabaseTests.test_sql_preserves_unknown_scale_and_reexport) ... ok
+test_radial_video_diagnostics_roundtrip (test_radial_quality.RadialDatabaseTests.test_radial_video_diagnostics_roundtrip) ... ok
+test_accepts_closed_boundary_with_spatially_varying_contrast (test_radial_quality.RadialTests.test_accepts_closed_boundary_with_spatially_varying_contrast) ... ok
+test_closed_ring_outer_boundary_not_mixed_with_inner_edge (test_radial_quality.RadialTests.test_closed_ring_outer_boundary_not_mixed_with_inner_edge) ... ok
+test_irregular_timestamps_and_gap (test_radial_quality.RadialTests.test_irregular_timestamps_and_gap) ... ok
+test_polarity_noise_and_distractors (test_radial_quality.RadialTests.test_polarity_noise_and_distractors) ... ok
+test_rejects_blank_clipped_and_ellipse (test_radial_quality.RadialTests.test_rejects_blank_clipped_and_ellipse) ... ok
+test_rejects_long_open_arc_despite_high_total_coverage (test_radial_quality.RadialTests.test_rejects_long_open_arc_despite_high_total_coverage) ... ok
+test_calibration_roundtrip_and_reject_mixed_tracks (test_series_analysis.SeriesTests.test_calibration_roundtrip_and_reject_mixed_tracks) ... ok
+test_config_defaults_and_cli_override (test_series_analysis.SeriesTests.test_config_defaults_and_cli_override) ... ok
+test_empty_video_exports_and_reference_missing (test_series_analysis.SeriesTests.test_empty_video_exports_and_reference_missing) ... ok
+test_tracking_order_misses_and_new_object (test_series_analysis.SeriesTests.test_tracking_order_misses_and_new_object) ... ok
+test_two_objects_end_to_end (test_series_analysis.SeriesTests.test_two_objects_end_to_end) ... ok
+test_global_assignment_beats_greedy (test_simulation.SimulationTests.test_global_assignment_beats_greedy) ... ok
+test_motion_stays_inside_bath_and_cools (test_simulation.SimulationTests.test_motion_stays_inside_bath_and_cools) ... ok
+test_seed_reproducibility_and_scorer_detects_errors (test_simulation.SimulationTests.test_seed_reproducibility_and_scorer_detects_errors) ... ok
+test_velocity_retains_ids_after_crossing (test_simulation.SimulationTests.test_velocity_retains_ids_after_crossing) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 8.866s
+
+OK

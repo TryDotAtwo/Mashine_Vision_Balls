@@ -1,0 +1,62 @@
+[
+  {
+    "series": "ordinary",
+    "run_id": "dbc74609-ec12-4583-b9d6-f9f3e5885969",
+    "tables_byte_identical": true,
+    "annotated_frames": 855
+  },
+  {
+    "series": "E3V0",
+    "run_id": "34cae124-d5b0-4498-977a-7c37d599b12c",
+    "tables_byte_identical": true,
+    "annotated_frames": 216,
+    "metrology_byte_identical": true
+  },
+  {
+    "series": "E3V1",
+    "run_id": "4422e18a-9393-45db-ae3d-e59bf3b8e383",
+    "tables_byte_identical": true,
+    "annotated_frames": 156,
+    "metrology_byte_identical": true
+  },
+  {
+    "series": "E3V2",
+    "run_id": "d0d102a0-3a22-4353-b262-72e8f1613777",
+    "tables_byte_identical": true,
+    "annotated_frames": 236,
+    "metrology_byte_identical": true
+  },
+  {
+    "series": "E3V3",
+    "run_id": "c023f21c-90f9-45e8-8086-68d2f43b94dc",
+    "tables_byte_identical": true,
+    "annotated_frames": 367,
+    "metrology_byte_identical": true
+  },
+  {
+    "series": "E3V4",
+    "run_id": "894451a8-ce90-4dce-b4ff-2d3ef330efb8",
+    "tables_byte_identical": true,
+    "annotated_frames": 210,
+    "metrology_byte_identical": true
+  },
+  {
+    "series": "E3V5",
+    "run_id": "3dd7d29f-cdfd-4add-9fd7-4c3849da4eae",
+    "tables_byte_identical": true,
+    "annotated_frames": 210,
+    "metrology_byte_identical": true
+  },
+  {
+    "series": "control_E2V0",
+    "run_id": "941d7ec9-423c-40dc-a4a7-a3926aeb5408",
+    "tables_byte_identical": true,
+    "annotated_frames": 43
+  },
+  {
+    "series": "control_D1",
+    "run_id": "f0e147a8-1c5b-4a06-b493-c38bbfb42d1d",
+    "tables_byte_identical": true,
+    "annotated_frames": 26
+  }
+]
