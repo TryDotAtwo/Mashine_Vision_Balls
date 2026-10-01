@@ -1,0 +1,485 @@
+[
+  {
+    "frame_index": 0,
+    "candidate_index": 0,
+    "time_s": 0.0,
+    "seed": [
+      133,
+      158,
+      19
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.09900845146041751,
+    "axis_ratio": 1.0017391200919792,
+    "circle": [
+      132.01300694356638,
+      158.00390078179186,
+      18.617374330580454
+    ],
+    "max_unsupported_arc_deg": 3.161381777423283,
+    "min_quadrant_coverage": 0.9333333333333333
+  },
+  {
+    "frame_index": 1,
+    "candidate_index": 0,
+    "time_s": 0.03333333333333333,
+    "seed": [
+      141,
+      160,
+      18
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.09270914382100763,
+    "axis_ratio": 1.004816729800551,
+    "circle": [
+      140.9050330857624,
+      160.75139935639595,
+      18.355361307343745
+    ],
+    "max_unsupported_arc_deg": 3.2898731961120276,
+    "min_quadrant_coverage": 0.9824561403508771
+  },
+  {
+    "frame_index": 2,
+    "candidate_index": 0,
+    "time_s": 0.06666666666666667,
+    "seed": [
+      149,
+      164,
+      19
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.08796667285766642,
+    "axis_ratio": 1.0023398204612888,
+    "circle": [
+      149.80886432291987,
+      163.54313917244994,
+      18.159255787951732
+    ],
+    "max_unsupported_arc_deg": 3.1537213322283133,
+    "min_quadrant_coverage": 0.9666666666666667
+  },
+  {
+    "frame_index": 3,
+    "candidate_index": 0,
+    "time_s": 0.1,
+    "seed": [
+      159,
+      166,
+      18
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.08242520423494414,
+    "axis_ratio": 1.0002935823846322,
+    "circle": [
+      158.72164429736156,
+      166.24646986108266,
+      17.96608610086309
+    ],
+    "max_unsupported_arc_deg": 3.224519589951123,
+    "min_quadrant_coverage": 0.9824561403508771
+  },
+  {
+    "frame_index": 4,
+    "candidate_index": 0,
+    "time_s": 0.13333333333333333,
+    "seed": [
+      167,
+      169,
+      18
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.0874784209529994,
+    "axis_ratio": 1.0048960676013126,
+    "circle": [
+      167.55748605303367,
+      168.95131269111474,
+      17.798136298827533
+    ],
+    "max_unsupported_arc_deg": 3.2597524641979225,
+    "min_quadrant_coverage": 0.9473684210526315
+  },
+  {
+    "frame_index": 5,
+    "candidate_index": 0,
+    "time_s": 0.16666666666666666,
+    "seed": [
+      177,
+      171,
+      17
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.0775849595808727,
+    "axis_ratio": 1.0002435357676682,
+    "circle": [
+      176.50568283893404,
+      171.5896490220116,
+      17.655097947266768
+    ],
+    "max_unsupported_arc_deg": 3.516105139163265,
+    "min_quadrant_coverage": 0.9345794392523364
+  },
+  {
+    "frame_index": 6,
+    "candidate_index": 0,
+    "time_s": 0.2,
+    "seed": [
+      185,
+      175,
+      18
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.08140896619905137,
+    "axis_ratio": 1.0008154728179346,
+    "circle": [
+      185.45312858953835,
+      174.2554606872107,
+      17.579568712038338
+    ],
+    "max_unsupported_arc_deg": 3.3168354639432125,
+    "min_quadrant_coverage": 0.9824561403508771
+  },
+  {
+    "frame_index": 7,
+    "candidate_index": 0,
+    "time_s": 0.23333333333333334,
+    "seed": [
+      195,
+      177,
+      18
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.08027739188712295,
+    "axis_ratio": 1.0022437389209409,
+    "circle": [
+      194.54607243597027,
+      176.81272987214743,
+      17.55483219318422
+    ],
+    "max_unsupported_arc_deg": 3.2467577472216065,
+    "min_quadrant_coverage": 0.9824561403508771
+  },
+  {
+    "frame_index": 8,
+    "candidate_index": 0,
+    "time_s": 0.26666666666666666,
+    "seed": [
+      203,
+      179,
+      18
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.0869657647249379,
+    "axis_ratio": 1.0021185569309812,
+    "circle": [
+      203.78049483089524,
+      179.42880258417907,
+      17.54823491801019
+    ],
+    "max_unsupported_arc_deg": 3.3222062572564193,
+    "min_quadrant_coverage": 0.9473684210526315
+  },
+  {
+    "frame_index": 9,
+    "candidate_index": 0,
+    "time_s": 0.3,
+    "seed": [
+      213,
+      182,
+      18
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.08325701273353499,
+    "axis_ratio": 1.0041557490867246,
+    "circle": [
+      213.35038691792894,
+      182.04086124082275,
+      17.59761125418679
+    ],
+    "max_unsupported_arc_deg": 3.222081026125649,
+    "min_quadrant_coverage": 0.9824561403508771
+  },
+  {
+    "frame_index": 10,
+    "candidate_index": 0,
+    "time_s": 0.3333333333333333,
+    "seed": [
+      223,
+      184,
+      17
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.08531893089843991,
+    "axis_ratio": 1.0009305830467776,
+    "circle": [
+      223.201307738681,
+      184.68180913567426,
+      17.64520550040825
+    ],
+    "max_unsupported_arc_deg": 3.5019462055246406,
+    "min_quadrant_coverage": 0.9719626168224299
+  },
+  {
+    "frame_index": 11,
+    "candidate_index": 0,
+    "time_s": 0.36666666666666664,
+    "seed": [
+      233,
+      188,
+      18
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.08927971311196699,
+    "axis_ratio": 1.0005069707132446,
+    "circle": [
+      233.4326541727234,
+      187.43753063444996,
+      17.788404503624122
+    ],
+    "max_unsupported_arc_deg": 3.284277471914257,
+    "min_quadrant_coverage": 0.9824561403508771
+  },
+  {
+    "frame_index": 12,
+    "candidate_index": 0,
+    "time_s": 0.4,
+    "seed": [
+      244,
+      190,
+      18
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.07448116249984567,
+    "axis_ratio": 1.0014349396981146,
+    "circle": [
+      244.10227286815777,
+      190.2021218738298,
+      17.967840472940534
+    ],
+    "max_unsupported_arc_deg": 3.1981373956593595,
+    "min_quadrant_coverage": 0.9824561403508771
+  },
+  {
+    "frame_index": 13,
+    "candidate_index": 0,
+    "time_s": 0.43333333333333335,
+    "seed": [
+      255,
+      194,
+      18
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.08326257728108476,
+    "axis_ratio": 1.0000518367288143,
+    "circle": [
+      255.25074831640234,
+      193.10545690061576,
+      18.14041213939559
+    ],
+    "max_unsupported_arc_deg": 3.3201397740249905,
+    "min_quadrant_coverage": 0.9824561403508771
+  },
+  {
+    "frame_index": 14,
+    "candidate_index": 0,
+    "time_s": 0.4666666666666667,
+    "seed": [
+      267,
+      196,
+      19
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.0972845973731235,
+    "axis_ratio": 1.003689894376344,
+    "circle": [
+      266.984201240377,
+      196.13548721372842,
+      18.35413610566937
+    ],
+    "max_unsupported_arc_deg": 3.0232213963375862,
+    "min_quadrant_coverage": 0.9666666666666667
+  },
+  {
+    "frame_index": 15,
+    "candidate_index": 0,
+    "time_s": 0.5,
+    "seed": [
+      279,
+      200,
+      18
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.08625378999665062,
+    "axis_ratio": 1.001642524695366,
+    "circle": [
+      279.24642673759496,
+      199.28954482153017,
+      18.592463754531565
+    ],
+    "max_unsupported_arc_deg": 3.287541266702813,
+    "min_quadrant_coverage": 0.9824561403508771
+  },
+  {
+    "frame_index": 16,
+    "candidate_index": 0,
+    "time_s": 0.5333333333333333,
+    "seed": [
+      292,
+      202,
+      19
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.08206890987400545,
+    "axis_ratio": 1.0040998658126017,
+    "circle": [
+      292.00589347971726,
+      202.5529931700098,
+      18.817899162780826
+    ],
+    "max_unsupported_arc_deg": 3.089691329062361,
+    "min_quadrant_coverage": 0.9666666666666667
+  },
+  {
+    "frame_index": 17,
+    "candidate_index": 0,
+    "time_s": 0.5666666666666667,
+    "seed": [
+      305,
+      206,
+      19
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.07883671230655985,
+    "axis_ratio": 1.0005252590951126,
+    "circle": [
+      305.26486039435423,
+      206.00327169495003,
+      19.054446424107766
+    ],
+    "max_unsupported_arc_deg": 3.0424154896375253,
+    "min_quadrant_coverage": 0.9666666666666667
+  },
+  {
+    "frame_index": 18,
+    "candidate_index": 0,
+    "time_s": 0.6,
+    "seed": [
+      319,
+      209,
+      20
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.08984473329639903,
+    "axis_ratio": 1.0009732495301844,
+    "circle": [
+      318.9837776493355,
+      209.5714241985448,
+      19.29920308558014
+    ],
+    "max_unsupported_arc_deg": 2.9436520547603053,
+    "min_quadrant_coverage": 0.9841269841269841
+  },
+  {
+    "frame_index": 19,
+    "candidate_index": 0,
+    "time_s": 0.6333333333333333,
+    "seed": [
+      333,
+      213,
+      20
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.09196610916111585,
+    "axis_ratio": 1.0008498482113362,
+    "circle": [
+      333.02900746392305,
+      213.3061535287498,
+      19.499974480405672
+    ],
+    "max_unsupported_arc_deg": 2.9033325424732994,
+    "min_quadrant_coverage": 0.9841269841269841
+  },
+  {
+    "frame_index": 20,
+    "candidate_index": 0,
+    "time_s": 0.6666666666666666,
+    "seed": [
+      347,
+      217,
+      20
+    ],
+    "status": "accepted",
+    "coverage": 0.8968253968253969,
+    "residual_rms_px": 0.2462144777321963,
+    "axis_ratio": 1.024349384486132,
+    "circle": [
+      347.091516324328,
+      217.04668033937267,
+      19.54135954982836
+    ],
+    "max_unsupported_arc_deg": 40.20354487404814,
+    "min_quadrant_coverage": 0.7301587301587301
+  },
+  {
+    "frame_index": 22,
+    "candidate_index": 0,
+    "time_s": 0.7333333333333333,
+    "seed": [
+      343,
+      220,
+      19
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.09396503480802705,
+    "axis_ratio": 1.0001171111677518,
+    "circle": [
+      342.89959264175275,
+      220.59181926931709,
+      19.756720491545163
+    ],
+    "max_unsupported_arc_deg": 3.0928713572507815,
+    "min_quadrant_coverage": 0.9666666666666667
+  },
+  {
+    "frame_index": 23,
+    "candidate_index": 0,
+    "time_s": 0.7666666666666666,
+    "seed": [
+      328,
+      221,
+      19
+    ],
+    "status": "accepted",
+    "coverage": 1.0,
+    "residual_rms_px": 0.08335129069455907,
+    "axis_ratio": 1.0025951499460202,
+    "circle": [
+      328.4232416740739,
+      220.82576892302205,
+      19.779142358022472
+    ],
+    "max_unsupported_arc_deg": 3.070080297802432,
+    "min_quadrant_coverage": 0.9666666666666667
+  }
+]

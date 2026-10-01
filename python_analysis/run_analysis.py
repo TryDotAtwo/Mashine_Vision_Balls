@@ -153,6 +153,9 @@ def build_parser(defaults: dict[str, object]) -> argparse.ArgumentParser:
     parser.add_argument("--clickhouse-url", default=None, help="HTTP(S) ClickHouse; иначе MVB_CLICKHOUSE_URL или localhost:8124")
     parser.add_argument("--clickhouse-database", default=None, help="Отдельная БД анализа; иначе MVB_CLICKHOUSE_DATABASE или mvb_analysis")
     parser.add_argument("--export-run", help="Повторно построить таблицы и графики из ClickHouse по UUID серии")
+    parser.add_argument("--bearing-check-run", help="UUID завершённой серии одного подшипника: таблица повторяемости и условной неопределённости")
+    parser.add_argument("--bearing-reference-mm", type=float, help="Предварительный размер подшипника для условной проверки")
+    parser.add_argument("--bearing-block-frames", type=int, default=15, help="Длина временного блока bootstrap")
     parser.set_defaults(**defaults)
     return parser
 
@@ -172,6 +175,16 @@ def main(argv: list[str] | None = None) -> None:
         return
     from mvb.clickhouse_store import ClickHouseStore
     storage = None if args.offline else ClickHouseStore(args.clickhouse_url, args.clickhouse_database)
+    if args.bearing_check_run:
+        if storage is None or not args.output_dir or args.bearing_reference_mm is None:
+            parser.error("--bearing-check-run requires ClickHouse, --output-dir and --bearing-reference-mm")
+        from mvb.metrology import export_bearing_check
+        try:
+            print(export_bearing_check(storage,args.bearing_check_run,args.output_dir,
+                                      args.bearing_reference_mm,args.bearing_block_frames))
+        except ValueError as exc:
+            parser.error(str(exc))
+        return
     if args.export_run:
         if storage is None or not args.output_dir:
             parser.error("--export-run requires ClickHouse and --output-dir")

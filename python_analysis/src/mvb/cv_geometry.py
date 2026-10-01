@@ -111,6 +111,8 @@ class RadialCircleFit:
     coverage: float
     residual_rms_px: float | None = None
     axis_ratio: float | None = None
+    max_unsupported_arc_deg: float | None = None
+    min_quadrant_coverage: float | None = None
 
 
 def refine_circle_radial(gray, circle, band_px=6, polarity="either",
@@ -126,6 +128,9 @@ def refine_circle_radial(gray, circle, band_px=6, polarity="either",
         raise ValueError("Invalid gradient floor")
     if not math.isfinite(band_px) or band_px < 2 or not 0 < min_coverage <= 1 or max_axis_ratio < 1:
         raise ValueError("Invalid radial fitting limits")
+    # Transparent objects and spatially varying backgrounds can reverse the
+    # edge direction around a genuine contour. Only enforce one polarity when
+    # requested by the acquisition profile (e.g. a dark opaque bearing).
     x,y,r = map(float,circle)
     h,w=gray.shape[:2]
     if not all(map(math.isfinite,(x,y,r))) or r < 3:
@@ -141,7 +146,7 @@ def refine_circle_radial(gray, circle, band_px=6, polarity="either",
     n=int(np.clip(math.ceil(2*math.pi*r),96,720))
     angles=np.arange(n)*2*math.pi/n
     ux,uy=np.cos(angles),np.sin(angles)
-    offsets=np.arange(-band_px,band_px+0.25,0.5)
+    offsets=np.arange(max(-band_px, 2-r),band_px+0.25,0.5)
     radii=r+offsets
     mx=(x-left+ux[:,None]*radii).astype(np.float32)
     my=(y-top+uy[:,None]*radii).astype(np.float32)
@@ -179,6 +184,29 @@ def refine_circle_radial(gray, circle, band_px=6, polarity="either",
         return RadialCircleFit(None,"unstable_circle_fit",coverage,rms)
     if rms is None or rms>max(1.5,0.025*r):
         return RadialCircleFit(None,"noncircular_residual",coverage,rms)
+    # Overall coverage alone can accept a long arc of a vessel or a glint.
+    # Require support on every side, and reject large unsupported angular gaps.
+    support_angles=np.mod(np.arctan2(points[inliers,1]-result.x[1],
+                                    points[inliers,0]-result.x[0]),2*math.pi)
+    ordered=np.sort(support_angles)
+    gap=float(np.max(np.diff(np.r_[ordered,ordered[0]+2*math.pi]))*180/math.pi)
+    quadrant=float(min(np.sum((support_angles>=q*math.pi/2)&
+                             (support_angles<(q+1)*math.pi/2))/(n/4)
+                       for q in range(4)))
+    # Illumination can make one quadrant weak while leaving short distributed
+    # gaps. Reject an empty side rather than requiring uniform contrast.
+    if gap>90 or quadrant<0.05:
+        return RadialCircleFit(None,"open_or_localized_contour",coverage,rms,
+                               max_unsupported_arc_deg=gap,min_quadrant_coverage=quadrant)
+    # Outliers must not continue to influence a diameter after being rejected.
+    clean=points[inliers]
+    final=least_squares(lambda v:np.hypot(clean[:,0]-v[0],clean[:,1]-v[1])-v[2],
+                        result.x,loss="soft_l1",f_scale=1.0,max_nfev=40)
+    if not final.success or np.linalg.norm(final.x[:2]-[x,y])>band_px or abs(final.x[2]-r)>band_px:
+        return RadialCircleFit(None,"unstable_inlier_fit",coverage,rms,
+                               max_unsupported_arc_deg=gap,min_quadrant_coverage=quadrant)
+    result=final
+    rms=float(np.sqrt(np.mean((np.hypot(clean[:,0]-result.x[0],clean[:,1]-result.x[1])-result.x[2])**2)))
     ellipse=cv2.fitEllipseAMS(points[inliers].astype(np.float32))
     axes=ellipse[1]
     ratio=float(max(axes)/min(axes)) if min(axes)>0 else None
@@ -187,4 +215,4 @@ def refine_circle_radial(gray, circle, band_px=6, polarity="either",
     fitted=tuple(float(v) for v in result.x)
     if min(fitted[0]-fitted[2],fitted[1]-fitted[2],w-1-fitted[0]-fitted[2],h-1-fitted[1]-fitted[2])<0:
         return RadialCircleFit(None,"clipped_fit",coverage,rms,ratio)
-    return RadialCircleFit(fitted,"accepted",coverage,rms,ratio)
+    return RadialCircleFit(fitted,"accepted",coverage,rms,ratio,gap,quadrant)

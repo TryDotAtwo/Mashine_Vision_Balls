@@ -1,0 +1,92 @@
+{
+  "schema": "mvb.series.v1",
+  "video": "D:\\ОИЯИ\\Mashine_Vision_Balls\\data\\videos\\drive_original_20240403_125310.mp4",
+  "fps": 60.00971879764589,
+  "width_px": 2160,
+  "height_px": 3840,
+  "decoded_frames": 778,
+  "reported_frames": 778,
+  "timestamp_source": "decoder CAP_PROP_POS_MSEC; nonmonotonic/unavailable timestamps replaced by frame-index/mean-FPS increments and counted; annotated video uses mean FPS",
+  "video_config": {
+    "video_path": "D:\\ОИЯИ\\Mashine_Vision_Balls\\data\\videos\\drive_original_20240403_125310.mp4",
+    "output_dir": "output\\contour_validation\\closed_edge_final\\control_D1",
+    "frame_step": 30,
+    "max_frames": 0,
+    "preview_frames": 6,
+    "interactive_preview": false,
+    "display_scale": 0.45,
+    "live_plots": false,
+    "live_plot_max_points": 3000
+  },
+  "detection_config": {
+    "max_detection_dimension_px": 700,
+    "detector_profile": "dark-ball",
+    "min_ball_diameter_px": 140,
+    "max_ball_diameter_px": 250,
+    "dark_contrast_min": 8.0,
+    "dark_angular_contrast_min": 0.85,
+    "roi": [
+      0.25,
+      0.3,
+      0.75,
+      0.65
+    ],
+    "min_ball_diameter_mm": 1.0,
+    "max_ball_diameter_mm": 10.0,
+    "sigma_ball_px": 1.5,
+    "sigma_reference_px": 1.5,
+    "reference_min_radius_frac": 0.25,
+    "reference_max_radius_frac": 0.6,
+    "refine_with_edge_fit": true,
+    "edge_refine_band_px": 4,
+    "edge_fit_method": "radial",
+    "radial_polarity": "either",
+    "radial_min_coverage": 0.65,
+    "radial_min_gradient": 0.2,
+    "radial_max_axis_ratio": 1.15,
+    "adaptive_hough": true,
+    "hough_param2_reference": [
+      22,
+      26,
+      28,
+      32,
+      36
+    ],
+    "hough_param2_ball": [
+      12,
+      16,
+      18,
+      22,
+      26
+    ],
+    "min_ball_edge_support": 0.35,
+    "ball_candidate_dedupe_px": 14.0,
+    "second_ball_score_ratio": 0.92,
+    "clear_track_after_lost_frames": 0
+  },
+  "measurement_mode": "pixel",
+  "fov_inputs": null,
+  "fov_uncertainty": null,
+  "reference": null,
+  "calibration": null,
+  "tracking_distance_px": 60.0,
+  "tracking_max_missed": 3,
+  "min_track_observations": 2,
+  "cell_mask": false,
+  "versions": {
+    "python": "3.11.5",
+    "opencv": "4.12.0",
+    "numpy": "2.2.6"
+  },
+  "video_sha256": "d6b3985278175c4dfba0ea2b72dbdbde57c4edd3e18c913385afa3d302f9e85c",
+  "source_sha256": {
+    "series_analysis.py": "fe20cdd32c8e52554590eb7f722afb9cc927797065870a5ba4f3fc29ea9bbdf9",
+    "pipeline.py": "f4da2a8b59388e017bceba70e5ccf3d1731fd3dd920aa6c962113f3418c8b016",
+    "cv_geometry.py": "3069b87c96bb2296c5671cc5213c4e4bdf511f9c8b1aae6208c7a150f8adfa2b",
+    "experiment_math.py": "94652a7cbbd70db17fed12ee42c2597dd8ac189eb5f9b341ace2e95be9e55f78",
+    "reporting.py": "6e61aa59cd87d0806803a9eda0532fc7278e5ce0fd08e84ded0232cde35009e3",
+    "clickhouse_store.py": "e92227e7b48115dd6b374e390f6998289843dff1f6454e28fd30b3f7431a9a38"
+  },
+  "storage": "clickhouse",
+  "run_id": "f0e147a8-1c5b-4a06-b493-c38bbfb42d1d"
+}

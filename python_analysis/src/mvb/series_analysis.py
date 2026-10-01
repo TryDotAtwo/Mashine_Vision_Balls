@@ -442,7 +442,9 @@ def analyze_series(video_cfg, detection_cfg, measurement_mode, fov_inputs=None,
                     detail = {"frame_index":index,"candidate_index":candidate_index,
                         "time_s":time_s,"seed":list(seed),"status":fit.status,
                         "coverage":fit.coverage,"residual_rms_px":fit.residual_rms_px,
-                        "axis_ratio":fit.axis_ratio,"circle":list(fit.circle) if fit.circle else None}
+                        "axis_ratio":fit.axis_ratio,"circle":list(fit.circle) if fit.circle else None,
+                        "max_unsupported_arc_deg":fit.max_unsupported_arc_deg,
+                        "min_quadrant_coverage":fit.min_quadrant_coverage}
                     diagnostics.append(detail)
                     quality_counts[fit.status] += 1
                     if fit.circle is None:

@@ -232,6 +232,10 @@ py -3 -m unittest discover -s tests -v
 Подробные параметры и границы проверки: [PHONE_VIDEO_VALIDATION_RU.md](docs/PHONE_VIDEO_VALIDATION_RU.md). Повторение нескольких конфигураций: `scripts/run_video_manifest.py --manifest configs/video_manifest.example.json --output-root output/replay`. Сначала укажите свои исходные видео и калибровки в копии манифеста. Пароль ClickHouse берётся из среды.
 
 
+## Проверка подшипника
+
+`python run_analysis.py --bearing-check-run UUID --bearing-reference-mm 3.98 --output-dir output/bearing_check` формирует таблицу проверки из завершённой серии ClickHouse. Первая половина задаёт масштаб, вторая проверяет его перенос. Экспортируются `bearing_check.csv` и `bearing_uncertainty.json`: условное смещение, RMSE, разброс и блочный bootstrap. Размер 3.98 мм предварителен; полная физическая неопределённость остаётся неизвестной. Методика: [METROLOGY_BEARING_RU.md](docs/METROLOGY_BEARING_RU.md); результаты: [CLOSED_CONTOUR_VALIDATION_RU.md](docs/CLOSED_CONTOUR_VALIDATION_RU.md).
+
 ## Устойчивое уточнение контура (01.10.2026)
 
 Дополнительный пакетный режим `--edge-fit-method radial` использует радиальные градиенты, субпиксельные максимумы и геометрическую подгонку `soft_l1`. Проверяются угловая опора, остаток, эллиптичность и обрезание. Отказ не заменяется исходным Hough-радиусом. Кандидаты, поступившие на уточнение, записываются в таблицу `python_quality_v1` и `quality.json`; экспорт по UUID восстанавливает диагностику.

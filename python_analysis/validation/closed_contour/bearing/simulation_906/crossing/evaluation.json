@@ -1,0 +1,274 @@
+{
+  "tp": 43,
+  "fp": 0,
+  "fn": 2,
+  "visible_truth_observations": 45,
+  "ignored_occluded_predictions": 0,
+  "id_switches": 0,
+  "precision": 1.0,
+  "recall": 0.9555555555555556,
+  "diameter_bias_mm": 0.0026421015870462246,
+  "diameter_rmse_mm": 0.018253541459057703,
+  "center_rmse_px": 0.14931025093428799,
+  "matched_observations": 43,
+  "matches": [
+    {
+      "frame_index": 0,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.0065149176561791755
+    },
+    {
+      "frame_index": 0,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.008462597032081298
+    },
+    {
+      "frame_index": 1,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.0051016597288198184
+    },
+    {
+      "frame_index": 1,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.008101813169496097
+    },
+    {
+      "frame_index": 2,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.005935374865186471
+    },
+    {
+      "frame_index": 2,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.0041352463147195095
+    },
+    {
+      "frame_index": 3,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.0016616229555057593
+    },
+    {
+      "frame_index": 3,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.005268972566685015
+    },
+    {
+      "frame_index": 4,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.008216509440710507
+    },
+    {
+      "frame_index": 4,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.003996618131028917
+    },
+    {
+      "frame_index": 5,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.00926312287691422
+    },
+    {
+      "frame_index": 5,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.008053500494765053
+    },
+    {
+      "frame_index": 6,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.0020458311361473136
+    },
+    {
+      "frame_index": 6,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.008052081100541564
+    },
+    {
+      "frame_index": 7,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.003727476510086536
+    },
+    {
+      "frame_index": 7,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.007976846046422459
+    },
+    {
+      "frame_index": 8,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.0016255929146704595
+    },
+    {
+      "frame_index": 8,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.006716944930161617
+    },
+    {
+      "frame_index": 9,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.017647855195359163
+    },
+    {
+      "frame_index": 9,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.003328701626579722
+    },
+    {
+      "frame_index": 11,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.11012409449240401
+    },
+    {
+      "frame_index": 13,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.018315316571227314
+    },
+    {
+      "frame_index": 13,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.0035473772955034732
+    },
+    {
+      "frame_index": 14,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.00890296865694884
+    },
+    {
+      "frame_index": 14,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.006356010674545942
+    },
+    {
+      "frame_index": 15,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.0022186490146238746
+    },
+    {
+      "frame_index": 15,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.0075128066491352286
+    },
+    {
+      "frame_index": 16,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.005087815206728408
+    },
+    {
+      "frame_index": 16,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.006296361006641327
+    },
+    {
+      "frame_index": 17,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.005936507530113655
+    },
+    {
+      "frame_index": 17,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.006397227348618806
+    },
+    {
+      "frame_index": 18,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.002456207002477395
+    },
+    {
+      "frame_index": 18,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.007809205751418524
+    },
+    {
+      "frame_index": 19,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.0047110339335438844
+    },
+    {
+      "frame_index": 19,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.006554667897308519
+    },
+    {
+      "frame_index": 20,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.0041721561086807135
+    },
+    {
+      "frame_index": 20,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.006229697347174934
+    },
+    {
+      "frame_index": 21,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.001045955867700954
+    },
+    {
+      "frame_index": 21,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.007684383463351985
+    },
+    {
+      "frame_index": 22,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.0070422284246647315
+    },
+    {
+      "frame_index": 22,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.005580149036357618
+    },
+    {
+      "frame_index": 23,
+      "truth_id": 0,
+      "track_id": 0,
+      "diameter_error_mm": -0.010305074047822771
+    },
+    {
+      "frame_index": 23,
+      "truth_id": 1,
+      "track_id": 1,
+      "diameter_error_mm": 0.00735894151215799
+    }
+  ]
+}
