@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import sys
 import os
+import cv2
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
@@ -57,6 +58,7 @@ def build_parser(defaults: dict[str, object]) -> argparse.ArgumentParser:
     parser.add_argument("--dark-angular-contrast-min", type=float, default=0.85)
     parser.add_argument("--roi", type=float, nargs=4, metavar=("LEFT","TOP","RIGHT","BOTTOM"), help="Normalized center-search ROI, 0..1")
     parser.add_argument("--annotated-video", action="store_true", help="Export annotated sampled MP4, max dimension 800px")
+    parser.add_argument("--opencv-threads",type=int,default=2,help="OpenCV CPU threads; 0 disables internal parallel execution")
     parser.add_argument("--frame-step", type=int, default=10, help="Брать каждый N-й кадр")
     parser.add_argument("--max-frames", type=int, default=0, help="Ограничить число обработанных сэмплов")
     parser.add_argument("--preview-frames", type=int, default=6, help="Сколько аннотированных кадров сохранить")
@@ -83,6 +85,11 @@ def build_parser(defaults: dict[str, object]) -> argparse.ArgumentParser:
         action="store_true",
         help="Отключить уточнение центра/радиуса по краям Canny на полном разрешении",
     )
+    parser.add_argument("--edge-fit-method",choices=("kasa","radial"),default=None)
+    parser.add_argument("--radial-polarity",choices=("either","rising","falling"),default="either")
+    parser.add_argument("--radial-min-gradient",type=float,default=.2)
+    parser.add_argument("--radial-min-coverage",type=float,default=.65)
+    parser.add_argument("--radial-max-axis-ratio",type=float,default=1.15)
     parser.add_argument("--edge-refine-band-px", type=int, default=4, help="Толщина кольца вокруг Hough-радиуса для подгонки")
     parser.add_argument("--no-adaptive-hough", action="store_true", help="Отключить перебор param2 HoughCircles")
     parser.add_argument(
@@ -155,6 +162,10 @@ def main(argv: list[str] | None = None) -> None:
     defaults = _preload_defaults(argv)
     parser = build_parser(defaults)
     args = parser.parse_args(argv)
+    args.edge_fit_method=args.edge_fit_method or ("kasa" if args.single_ball or args.no_edge_refine else "radial")
+    if args.opencv_threads<0:
+        parser.error("--opencv-threads must be nonnegative")
+    cv2.setNumThreads(args.opencv_threads)
 
     if args.print_config_template:
         print(CONFIG_TEMPLATE.rstrip())
@@ -169,6 +180,8 @@ def main(argv: list[str] | None = None) -> None:
         except ValueError as exc:
             parser.error(str(exc))
         return
+    if args.single_ball and args.edge_fit_method=="radial":
+        parser.error("Radial fitting is available in multi-object mode; omit --single-ball")
     if args.single_ball and not args.offline:
         parser.error("Legacy single-ball mode requires --offline; use multi-object mode for ClickHouse")
     if args.simulate_check:
@@ -176,7 +189,7 @@ def main(argv: list[str] | None = None) -> None:
         if not 12 <= args.simulation_frames <= 60:
             parser.error("--simulation-frames must be 12..60 (liquid-stage model, <=2 seconds)")
         try:
-            run_validation(args.simulation_output, args.simulation_seed, args.simulation_frames)
+            run_validation(args.simulation_output, args.simulation_seed, args.simulation_frames, edge_fit_method=args.edge_fit_method)
         except ValueError as exc:
             parser.error(str(exc))
         return
@@ -251,6 +264,8 @@ def main(argv: list[str] | None = None) -> None:
     if args.single_ball and args.measurement_mode == "pixel":
         parser.error("Pixel mode requires multi-object analysis")
     detection_cfg = DetectionConfig(
+        edge_fit_method=args.edge_fit_method, radial_polarity=args.radial_polarity,
+        radial_min_gradient=args.radial_min_gradient, radial_min_coverage=args.radial_min_coverage, radial_max_axis_ratio=args.radial_max_axis_ratio,
         max_detection_dimension_px=args.detection_max_dimension,
         detector_profile=args.detector_profile,
         min_ball_diameter_px=args.min_ball_diameter_px,

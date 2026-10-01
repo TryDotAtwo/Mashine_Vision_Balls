@@ -1,0 +1,74 @@
+[
+  {
+    "id": "E3V0",
+    "frame": 183,
+    "measurements": 1,
+    "matches": [
+      {
+        "center_distance_px": 17.671192314587987,
+        "radius_ratio": 0.9906215211234359,
+        "pass": true
+      }
+    ],
+    "scope": "Approximate labels previously viewed, exploratory check only"
+  },
+  {
+    "id": "E3V1",
+    "frame": 132,
+    "measurements": 1,
+    "matches": [
+      {
+        "center_distance_px": 41.88356801208421,
+        "radius_ratio": 1.0055761810415647,
+        "pass": true
+      }
+    ],
+    "scope": "Approximate labels previously viewed, exploratory check only"
+  },
+  {
+    "id": "E3V2",
+    "frame": 200,
+    "measurements": 1,
+    "matches": [
+      {
+        "center_distance_px": 6.806011335371232,
+        "radius_ratio": 0.9856516010524524,
+        "pass": true
+      }
+    ],
+    "scope": "Approximate labels previously viewed, exploratory check only"
+  },
+  {
+    "id": "E3V3",
+    "frame": 311,
+    "measurements": 1,
+    "matches": [
+      {
+        "center_distance_px": 7.75512078607729,
+        "radius_ratio": 0.998298100549983,
+        "pass": true
+      }
+    ],
+    "scope": "Approximate labels previously viewed, exploratory check only"
+  },
+  {
+    "id": "E3V4",
+    "frame": 178,
+    "measurements": 0,
+    "matches": [],
+    "scope": "Approximate labels previously viewed, exploratory check only"
+  },
+  {
+    "id": "E3V5",
+    "frame": 178,
+    "measurements": 1,
+    "matches": [
+      {
+        "center_distance_px": 123.00324371399927,
+        "radius_ratio": 1.013326533323675,
+        "pass": true
+      }
+    ],
+    "scope": "Approximate labels previously viewed, exploratory check only"
+  }
+]

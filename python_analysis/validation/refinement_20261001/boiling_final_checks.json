@@ -1,0 +1,13 @@
+{
+  "run_id": "e7e5b575-29e8-4f65-b760-455373379bec",
+  "decoded_frames": 756,
+  "byte_identical_exports": {
+    "measurements.csv": true,
+    "tracks.csv": true,
+    "frames.csv": true,
+    "quality.json": true
+  },
+  "reviewed_frame": 191,
+  "review_result": "Accepted approximately941px circle follows a cell wall, not a confirmed ball. Broad diameter range and disabled cell mask are diagnostic settings, not a production ball profile.",
+  "slow_attempt": "Stopped owned process35148 after bounded full run completed; raw data and partial annotated.mp4 preserved, no completed manifest for slow attempt."
+}

@@ -1,0 +1,196 @@
+{
+  "date": "2026-10-01",
+  "source_sha256": "7bbbcade6ade3cd95d3f0be9a3bfab964ae28f2f585297ea9cb4fbcf19a7c268",
+  "pdf_sha256": "3234c30f8878ffe668864fb87ed8193fa8b961970d96dd9085ceeaf7ecb3e62b",
+  "pdf_pages": 33,
+  "manual_source_sha256": "be9bdf9b7b32c714d408b0b68c736328e34d61e2c72caf8e399aab4ca2745ed5",
+  "manual_pdf_sha256": "71b4f090ed73239e3654b7fc58b9e40f658be3d0786eba7633ae293d89ccf211",
+  "manual_pages": 10,
+  "native_compiler": "compile-failed: Unable to find standard directories for platform",
+  "fallback": "Existing XeLaTeX compiled same saved sources successfully; report_delivery.log/manual_delivery.log",
+  "bibliography": {
+    "keys": 19,
+    "undefined": [],
+    "duplicates": []
+  },
+  "visual_review": {
+    "method": "Individual page images at 125 percent, all pages reviewed; changed pages rechecked after final edits. Editable figures independently inspected.",
+    "pages": [
+      {
+        "page": 1,
+        "png_sha256": "aff99a7bb8ef59671aa252404967f6a1604510fef25e732508aeadf8d086c370",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 2,
+        "png_sha256": "c3e020b2ba96226d0c1340564240ba23530706944fa42fe32ab96b8ddcb4fe88",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 3,
+        "png_sha256": "636c13ff0b5bbb249c2f2587dfcb262da37e4d668d509066b1fe9513ba78cf5f",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 4,
+        "png_sha256": "c4fead6987b3440fdfd110245f9bab604aeeffd08d410ac7b7c6dcf4c28c27db",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 5,
+        "png_sha256": "d6909428e5add578d208f6821236fc16153eadfafffaebb3e42bb1f4c1e156da",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 6,
+        "png_sha256": "7244bc502cae5ebb762123a9153ccd95a243503a5160b37b9198f9daa9b269bf",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 7,
+        "png_sha256": "1d7d8ab2ea0bde85482eecb9c0deeb36f5f7034c9aa8dfa5ea1c7adf3fc8a1ca",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 8,
+        "png_sha256": "6e626e6d71591020ce99a6ea0a666c5347f68e7b141c70c1c8b200d3f2fbfeef",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 9,
+        "png_sha256": "33b5045d15d2493ee60f32f878e924ab1949baaefed68640678a3ddf8be5220d",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 10,
+        "png_sha256": "d7ad98d88e4c071ce99d8d04f82e7d5b7f036d97549424e9ac85df18a1f917d8",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 11,
+        "png_sha256": "31c7378bdfc02cf48571dc9580cff4a0dc159c54d612d0cf864c4b5526dc9886",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 12,
+        "png_sha256": "3344708800e2376fc07423a1ea57c7953eb9edaeb260f3643d0201cce9ac4547",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 13,
+        "png_sha256": "93124cc3cac93a0f1fcf33a912ea6b183214bac06d1b097b133bddecdfaad2bc",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 14,
+        "png_sha256": "70dda50587e29db2f58f007ad798dc7ad15eb4035856f07d5dcf96461149208e",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 15,
+        "png_sha256": "a0635c71345e954a6b8ab62c93e276cfa27db62b29e4119980015a27dc76eb62",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 16,
+        "png_sha256": "909d4807ad923c2f6c0a71de800c3876b529b7e736eadf6833fcfc76bd793a0b",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 17,
+        "png_sha256": "73979443227ef2336392da33a724d4882decf68cc895001a6c2f33ede71162fa",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 18,
+        "png_sha256": "4b539e0d914ed15155399609d3048d54ee9ffc0c0479e5bbf8a8b5267de2b675",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 19,
+        "png_sha256": "1893f1ae3ae3599f1c5bb3cb483666278a300c1bc0ed7bf6179a99355adfba97",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 20,
+        "png_sha256": "e466d78467c4ea53b7d039b2e5633379c0c4c42282d5340e590c0441bcfb6dbc",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 21,
+        "png_sha256": "b6ee69bca7709e6d262177d802fac7addb51d26785d48d267ca066bf16f90b9c",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 22,
+        "png_sha256": "5f456ec0b16a46f282e57ef793943a75c754d271f2128fb8022dcfa1f00804d5",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 23,
+        "png_sha256": "f72e83f9a5d55cce5a62af26ebf7923bf9ce71a0a9ad7fe92d9eaaa3aebbd221",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 24,
+        "png_sha256": "a70f4a25b562d22a364ad2b6b3438b15345094ac99705d6a08f77811369821d0",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 25,
+        "png_sha256": "380f887959a3a841cb118b0891e404d372b508e80267138a388282a55eea103f",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 26,
+        "png_sha256": "68a61c82d97735eec9705fdf2cb63f8fc18c0be1597046e048df588764bf2592",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 27,
+        "png_sha256": "e1593fc7938912ea9cb3cd7f3baf2fd41ad4da8716887cab95f1a43c8e0d327e",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 28,
+        "png_sha256": "56947136ef85229964f0714e7761d4165748fab8964d418d5e3d7df38510d914",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 29,
+        "png_sha256": "6dc81f0f38fd6e200be4621f5d14426d11d56fb8f48cb52a32d5cbe83ee1e987",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 30,
+        "png_sha256": "4826b6eb10cb46c773be5d979f068bf0b223fea243e513a0a9f05dd72b012c01",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 31,
+        "png_sha256": "6ac69448003150941adcc8e5ed82834de2fd4db2db32c9b7a69dedfb443cdcf6",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 32,
+        "png_sha256": "92fd7837652c0dad3454232f487e541b89daa707cafba2a6be09248a26ae38c3",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      },
+      {
+        "page": 33,
+        "png_sha256": "ed6cf7ca54063bc101f0040326d1f0d3d5fab29fa5e5e60402070d2a523e7e34",
+        "status": "reviewed; no visible clipping or missing glyphs"
+      }
+    ]
+  },
+  "accepted_minor_layout": "0.20091pt hbox overflow in old archive paragraph, no visible clipping",
+  "scientific_limits": [
+    "Approximate3.98mm reference, instrument uncertainty unknown, total sigma NULL.",
+    "Circle/episode not confirmed physical ball.",
+    "Boiling frame191 accepted cell rim in deliberately broad diagnostic profile.",
+    "No established camera/standoff/refractive calibration or absolute hardware accuracy.",
+    "Deformed synthetic48 observations rejected; scale-drift RMSE0.16mm."
+  ],
+  "published_source_sha256": "8c401f25e589b271464ebe1cdfa2fac479fbbc36cfc65af1b5a92fd24b851849",
+  "published_source_changes": "Four includegraphics paths adapted to identical publication copies; local source hash retained as source_sha256."
+}

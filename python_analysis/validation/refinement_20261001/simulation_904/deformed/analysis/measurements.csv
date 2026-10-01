@@ -1,0 +1,1 @@
+frame_index,time_s,ball_center_x_px,ball_center_y_px,ball_radius_px,ball_diameter_px,reference_radius_px,reference_diameter_px,scale_mm_per_px,diameter_mm,sigma_model_mm,method,ball_edge_support,ball_valid_candidates,ball_id

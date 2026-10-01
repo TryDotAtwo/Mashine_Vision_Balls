@@ -1,0 +1,97 @@
+[
+  {
+    "name": "ordinary_hough",
+    "run_id": "0cdb12c3-9897-42cc-9248-1be013e800b8",
+    "sampled_frames": 855,
+    "decoded_frames": 855,
+    "annotated_decoded": 855,
+    "annotated_size_hw": [
+      800,
+      800
+    ],
+    "source_hash_fields": {
+      "series_analysis.py": "656f74fa23614403d37c0014c71cbdc8c66fde1eaa5d230ef83123b01787b02e",
+      "pipeline.py": "f4da2a8b59388e017bceba70e5ccf3d1731fd3dd920aa6c962113f3418c8b016",
+      "cv_geometry.py": "48e3706cb4e58eb31184e804599637eb5a22a0241b83d46356f4ba46a0701935",
+      "experiment_math.py": "94652a7cbbd70db17fed12ee42c2597dd8ac189eb5f9b341ace2e95be9e55f78",
+      "reporting.py": "6e61aa59cd87d0806803a9eda0532fc7278e5ce0fd08e84ded0232cde35009e3",
+      "clickhouse_store.py": "e92227e7b48115dd6b374e390f6998289843dff1f6454e28fd30b3f7431a9a38"
+    }
+  },
+  {
+    "name": "legacy_hough",
+    "run_id": "74297e51-b1f3-4be6-8b16-5239358c7795",
+    "sampled_frames": 392,
+    "decoded_frames": 1960,
+    "annotated_decoded": 392,
+    "annotated_size_hw": [
+      608,
+      800
+    ],
+    "source_hash_fields": {
+      "series_analysis.py": "656f74fa23614403d37c0014c71cbdc8c66fde1eaa5d230ef83123b01787b02e",
+      "pipeline.py": "f4da2a8b59388e017bceba70e5ccf3d1731fd3dd920aa6c962113f3418c8b016",
+      "cv_geometry.py": "48e3706cb4e58eb31184e804599637eb5a22a0241b83d46356f4ba46a0701935",
+      "experiment_math.py": "94652a7cbbd70db17fed12ee42c2597dd8ac189eb5f9b341ace2e95be9e55f78",
+      "reporting.py": "6e61aa59cd87d0806803a9eda0532fc7278e5ce0fd08e84ded0232cde35009e3",
+      "clickhouse_store.py": "e92227e7b48115dd6b374e390f6998289843dff1f6454e28fd30b3f7431a9a38"
+    }
+  },
+  {
+    "name": "control_E2V0",
+    "run_id": "8ce82aac-9615-4635-977e-d60373060ec1",
+    "sampled_frames": 43,
+    "decoded_frames": 43,
+    "annotated_decoded": 43,
+    "annotated_size_hw": [
+      800,
+      450
+    ],
+    "source_hash_fields": {
+      "series_analysis.py": "656f74fa23614403d37c0014c71cbdc8c66fde1eaa5d230ef83123b01787b02e",
+      "pipeline.py": "f4da2a8b59388e017bceba70e5ccf3d1731fd3dd920aa6c962113f3418c8b016",
+      "cv_geometry.py": "48e3706cb4e58eb31184e804599637eb5a22a0241b83d46356f4ba46a0701935",
+      "experiment_math.py": "94652a7cbbd70db17fed12ee42c2597dd8ac189eb5f9b341ace2e95be9e55f78",
+      "reporting.py": "6e61aa59cd87d0806803a9eda0532fc7278e5ce0fd08e84ded0232cde35009e3",
+      "clickhouse_store.py": "e92227e7b48115dd6b374e390f6998289843dff1f6454e28fd30b3f7431a9a38"
+    }
+  },
+  {
+    "name": "control_D1",
+    "run_id": "fd5a600d-27fe-435a-b53b-fd605d266f60",
+    "sampled_frames": 26,
+    "decoded_frames": 778,
+    "annotated_decoded": 26,
+    "annotated_size_hw": [
+      800,
+      450
+    ],
+    "source_hash_fields": {
+      "series_analysis.py": "656f74fa23614403d37c0014c71cbdc8c66fde1eaa5d230ef83123b01787b02e",
+      "pipeline.py": "f4da2a8b59388e017bceba70e5ccf3d1731fd3dd920aa6c962113f3418c8b016",
+      "cv_geometry.py": "48e3706cb4e58eb31184e804599637eb5a22a0241b83d46356f4ba46a0701935",
+      "experiment_math.py": "94652a7cbbd70db17fed12ee42c2597dd8ac189eb5f9b341ace2e95be9e55f78",
+      "reporting.py": "6e61aa59cd87d0806803a9eda0532fc7278e5ce0fd08e84ded0232cde35009e3",
+      "clickhouse_store.py": "e92227e7b48115dd6b374e390f6998289843dff1f6454e28fd30b3f7431a9a38"
+    }
+  },
+  {
+    "name": "boiling_bounded_complete",
+    "run_id": "e7e5b575-29e8-4f65-b760-455373379bec",
+    "sampled_frames": 756,
+    "decoded_frames": 756,
+    "annotated_decoded": 756,
+    "annotated_size_hw": [
+      450,
+      800
+    ],
+    "source_hash_fields": {
+      "series_analysis.py": "656f74fa23614403d37c0014c71cbdc8c66fde1eaa5d230ef83123b01787b02e",
+      "pipeline.py": "f4da2a8b59388e017bceba70e5ccf3d1731fd3dd920aa6c962113f3418c8b016",
+      "cv_geometry.py": "48e3706cb4e58eb31184e804599637eb5a22a0241b83d46356f4ba46a0701935",
+      "experiment_math.py": "94652a7cbbd70db17fed12ee42c2597dd8ac189eb5f9b341ace2e95be9e55f78",
+      "reporting.py": "6e61aa59cd87d0806803a9eda0532fc7278e5ce0fd08e84ded0232cde35009e3",
+      "clickhouse_store.py": "e92227e7b48115dd6b374e390f6998289843dff1f6454e28fd30b3f7431a9a38"
+    }
+  }
+]

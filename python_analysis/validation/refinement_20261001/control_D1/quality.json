@@ -1,0 +1,32 @@
+[
+  {
+    "frame_index": 180,
+    "candidate_index": 0,
+    "time_s": 2.999522222222222,
+    "seed": [
+      1512,
+      1415,
+      85
+    ],
+    "status": "noncircular_residual",
+    "coverage": 0.8953271028037383,
+    "residual_rms_px": 8.743596049502939,
+    "axis_ratio": null,
+    "circle": null
+  },
+  {
+    "frame_index": 210,
+    "candidate_index": 0,
+    "time_s": 3.499444444444445,
+    "seed": [
+      1479,
+      1468,
+      72
+    ],
+    "status": "noncircular_residual",
+    "coverage": 0.9006622516556292,
+    "residual_rms_px": 7.959839484518398,
+    "axis_ratio": null,
+    "circle": null
+  }
+]

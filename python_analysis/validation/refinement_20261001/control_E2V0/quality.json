@@ -1,0 +1,47 @@
+[
+  {
+    "frame_index": 2,
+    "candidate_index": 0,
+    "time_s": 0.033322222222222225,
+    "seed": [
+      358,
+      396,
+      123
+    ],
+    "status": "insufficient_radial_coverage",
+    "coverage": 0.6208333333333333,
+    "residual_rms_px": null,
+    "axis_ratio": null,
+    "circle": null
+  },
+  {
+    "frame_index": 8,
+    "candidate_index": 0,
+    "time_s": 0.14996666666666666,
+    "seed": [
+      431,
+      390,
+      84
+    ],
+    "status": "noncircular_residual",
+    "coverage": 0.7556818181818182,
+    "residual_rms_px": 2.9869624222702664,
+    "axis_ratio": null,
+    "circle": null
+  },
+  {
+    "frame_index": 28,
+    "candidate_index": 0,
+    "time_s": 0.4832444444444445,
+    "seed": [
+      361,
+      405,
+      123
+    ],
+    "status": "noncircular_residual",
+    "coverage": 0.7430555555555556,
+    "residual_rms_px": 3.2255737418942605,
+    "axis_ratio": null,
+    "circle": null
+  }
+]
